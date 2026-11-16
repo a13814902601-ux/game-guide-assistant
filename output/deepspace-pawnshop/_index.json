@@ -1,0 +1,60 @@
+{
+  "game": "deepspace-pawnshop",
+  "name_zh": "深空当铺：可能是偷的",
+  "name_en": "Probably Stolen",
+  "steam_appid": 4348910,
+  "scraped_at": "2026-11-16",
+  "sources": [
+    {
+      "id": "steam",
+      "url": "https://steamcommunity.com/app/4348910/guides/",
+      "status": "active",
+      "note": "Steam 社区指南（中文为主）",
+      "count": 10
+    },
+    {
+      "id": "wikily",
+      "url": "https://wikily.gg/probably-stolen",
+      "status": "active",
+      "note": "Wikily.gg 英文 wiki（结构化页面）",
+      "count": 602
+    },
+    {
+      "id": "ali213",
+      "url": "https://gl.ali213.net/z/157497",
+      "status": "active",
+      "note": "游民星空攻略专区",
+      "count": 23
+    },
+    {
+      "id": "bilibili",
+      "url": "https://www.bilibili.com/",
+      "status": "active",
+      "note": "B站专栏与视频字幕",
+      "count": 14
+    },
+    {
+      "id": "xiaoheihe",
+      "url": "https://www.xiaoheihe.cn/",
+      "status": "active",
+      "note": "小黑盒社区分享页",
+      "count": 47
+    }
+  ],
+  "guides": {},
+  "guides_included": false,
+  "guides_total_original": 696,
+  "guides_note": "公开仓库不分发第三方攻略全文；如需全文检索，请按来源 URL 自行采集到 guides/ 目录。",
+  "data": {
+    "categories": {
+      "achievements": 21,
+      "bosses": 3,
+      "characters": 14,
+      "items": 12,
+      "quests": 11,
+      "recipes": 74
+    },
+    "total": 135,
+    "extracted_at": "2026-11-16"
+  }
+}

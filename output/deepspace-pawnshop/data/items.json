@@ -1,0 +1,268 @@
+[
+  {
+    "id": "item-youzhishui",
+    "name": "优质水（净水器前期批发法）",
+    "name_en": "Premium Water",
+    "category": "items",
+    "prerequisites": [
+      "在王尔德服务里解锁水商两项服务：水资源交易、沟渠水直供",
+      "拥有一台净水器（推荐每周三来访的退休水商处购买，只加价45%；杰克逊博士夜间概率刷出但赤字难度下加价100%）"
+    ],
+    "steps": [
+      "用750ml水瓶在水龙头接沟渠水/铁锈水2次（共1500ml）",
+      "倒入无模组加成的净水器，等一晚",
+      "第二天得到99%优质水，零成本批发",
+      "进阶：倒1650ml（750+450×2）也能稳定出优质水；水质在0.8~0.823时甚至可净化2000ml"
+    ],
+    "cautions": [
+      "净水器原理：质量决定净化上限（100质量可到99.90%纯水），性能决定每晚净化量；杂质按 微生物→重金属→化学污染 顺序去除",
+      "水质越差净化倍率越高（≤80%时10倍、88.5%时5倍、94%时2倍、98%时1倍）——所以少量脏水一晚变优质水",
+      "沟渠水水质波动大，没检测就接2L可能翻车，求稳接1650ml",
+      "Demo里的集水器已被削：多台互相干扰（1台100%、2台80%、3台66%）；海德拉净化出的基础水无法再过滤成优质水；滤芯无法过滤微生物（只能净水药片或紫外灯）"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3832468272",
+    "verified_date": "2026-11-16",
+    "game_version": "1.0.0.13（正式版）"
+  },
+  {
+    "id": "item-jiujing",
+    "name": "酒精（大量获取法）",
+    "name_en": "Alcohol",
+    "category": "items",
+    "prerequisites": [
+      "拥有一台蒸发器",
+      "购买或获得「努特加」（Nudka，含酒精饮料）"
+    ],
+    "steps": [
+      "把努特加倒入蒸发器",
+      "静置一晚",
+      "获得大量100%纯酒精（后期贩冰不缺酒精）"
+    ],
+    "cautions": [
+      "替代来源：化学药剂拆包也可获得酒精",
+      "除脂合剂与酒精在温度高于80度时会蒸发，加热保存时注意"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3834569449",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-fentaipian",
+    "name": "芬太片（制作法）",
+    "name_en": "Fentanyl Pill",
+    "category": "items",
+    "prerequisites": [
+      "管制化学品：N-羟甲基碱溶液、还原剂",
+      "一般化学品：酸与碱",
+      "净水片、织物过滤器、滤水器、化学制剂成型机",
+      "成分以水质扫描仪或成分光谱仪显示的容量为准"
+    ],
+    "steps": [
+      "打开管制化学品的N-羟甲基碱溶液",
+      "用酸与碱处理稳定剂：稳定剂大量（100ml以上）时约1:5（稳定剂的五分之一），可一次加20ml；100ml以下少量多次；剩10ml以下与微升(ul)级接近1:1",
+      "加入还原剂：还原剂:N-羟甲基碱 ≈ 1:1.33~1.34（133ml碱加100ml还原剂）",
+      "用净水片把化学污染物压到约0.7%（完全无水时净水片不工作，可加1ml纯水），加热到110~130度等反应完成",
+      "降温后用织物过滤2次、滤水器过滤2次",
+      "放入化学制剂成型机成型、出售"
+    ],
+    "cautions": [
+      "产率：约每10ml N-羟甲基碱原料产1ml芬太（实测237.83ml原料→23.78ml成品）",
+      "重金属目前没有可靠去除方法，追求高纯度请选本身重金属含量低的原料",
+      "药剂通用纯化技巧：过滤水器滤2-3次去物理污染；加1cc纯水后用净水片压化学污染到0.7%；加热板100度以上蒸干水保存（除脂合剂和酒精除外）"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3830757762",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（繁中攻略）"
+  },
+  {
+    "id": "item-yeti-haoyun",
+    "name": "液体好运",
+    "name_en": "Liquid Luck",
+    "category": "items",
+    "prerequisites": [
+      "与顾客「乔治奥」持续互动"
+    ],
+    "steps": [
+      "一直与乔治奥互动，他会赠送一瓶液体好运",
+      "使用后3天内获得+75幸运",
+      "之后他还有机会让你花钱再买三瓶"
+    ],
+    "cautions": [
+      "配合刮刮乐头奖成就使用：喝完买光所有刮刮乐",
+      "开局特性「幸运儿」只+5幸运，性价比远不如它"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-biaoqian-dayinji",
+    "name": "标签打印机",
+    "name_en": "Label Printer",
+    "category": "items",
+    "prerequisites": [
+      "完成教学或跳过开场即获得"
+    ],
+    "steps": [
+      "把它拖动到有品质/标签的物品上",
+      "即可在正品/赝品标签间切换"
+    ],
+    "cautions": [
+      "对应成就「下层特供」"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-jianzheng-zhengshu",
+    "name": "鉴定委员会初级证书",
+    "category": "items",
+    "prerequisites": [
+      "约第5天花信用点加入鉴定委员会（委员会成员到访时）"
+    ],
+    "steps": [
+      "收到培训材料和证书",
+      "挂到展示柜（不能收进档案！）",
+      "吸引需要鉴定的客人上门",
+      "双击证书可更改接受的物品种类"
+    ],
+    "cautions": [
+      "收进档案就吸引不到鉴定客人——必须挂展示柜"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-jiekexun-nightshop",
+    "name": "模组舱扩建套件 / 化学设备模组 / 节点（杰克逊博士夜市）",
+    "category": "items",
+    "prerequisites": [
+      "等到晚上，杰克逊博士的夜间商店开张"
+    ],
+    "steps": [
+      "晚上去找杰克逊博士购买",
+      "模组舱扩建套件：给机器扩模组槽",
+      "化学设备模组：除蒸发器外的化学仪器专用（优先放化学制剂成型器防污染）",
+      "节点：吸收相邻模组属性",
+      "他还卖化学模组、净水器（概率刷出）等"
+    ],
+    "cautions": [
+      "赤字连连（高难）难度下博士加价100%，买净水器优先找周三的退休水商（只加价45%）"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-shuipei-cailiao",
+    "name": "水培营养片 / 水质扫描仪（退休农夫）",
+    "category": "items",
+    "prerequisites": [
+      "在乔·王尔德人脉网络点出「退休农夫」"
+    ],
+    "steps": [
+      "从退休农夫处购买水质扫描仪（查水的属性）",
+      "购买水培营养片，按植物需求和水的属性加几片到水中",
+      "配合植物分析仪使用"
+    ],
+    "cautions": [
+      "种巨型营养果（成就「绿手指」）的关键材料"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-diqi",
+    "name": "地契（买下店铺）",
+    "category": "items",
+    "prerequisites": [
+      "存够房产当前价值（打开日历看右下角，一般12,000信用点起；漫天要价难度12,000起步）"
+    ],
+    "steps": [
+      "在交房租的日子选择「买下店铺」",
+      "或借高利贷买下"
+    ],
+    "cautions": [
+      "高利贷需还完贷款才拿地契——会拖过50天，影响「少年得志」",
+      "买下店铺是通关结局（Buyout），之后可继续玩"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-yingye-xukezheng",
+    "name": "营业许可证",
+    "category": "items",
+    "prerequisites": [
+      "游戏进行到约第30天",
+      "贸易委员会官员到访售卖"
+    ],
+    "steps": [
+      "准备信用点（不同难度价格不同）",
+      "购买营业许可证"
+    ],
+    "cautions": [
+      "可延期一周再买，但最终必须买",
+      "与房租、电费分开计算"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "item-store-attraction",
+    "name": "店铺吸引力/装修升级（光鲜亮丽成就指南）",
+    "name_en": "Store Attractiveness & Renovations",
+    "category": "items",
+    "prerequisites": [
+      "推进乔·王尔德人脉网络（第7天开放）",
+      "准备信用点（三级翻新共2,850）"
+    ],
+    "steps": [
+      "店铺翻新 I：500信用点，基础吸引力+150",
+      "店铺翻新 II：750信用点（需先有 I），基础吸引力+150",
+      "店铺翻新 III：1,600信用点（需先有 II），基础吸引力+150",
+      "补充手段：幻象投影仪等机器（可加模组再提升）；购买清洁服务消除多日未清理/遭破坏的负面",
+      "打开日历→夜间报告查看当前吸引力，≥1,000 开始新一天即解锁成就「光鲜亮丽」"
+    ],
+    "cautions": [
+      "翻新是吸引力最大头（共+450基础），但1000达标一般还需机器/清洁配合",
+      "多日不清理或遭破坏会掉吸引力，勤买清洁服务"
+    ],
+    "source_url": "https://wikily.gg/probably-stolen/joe-wild-network",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（英文wiki，翻新价格已核对）"
+  },
+  {
+    "id": "item-water-merchant-flow",
+    "name": "水商流派完整攻略（开局到毕业）",
+    "name_en": "Water Merchant Build",
+    "category": "items",
+    "prerequisites": [
+      "在乔·王尔德人脉网络解锁水商两项服务：水资源交易、沟渠水直供",
+      "净水器×1（推荐每周三的退休水商购买，加价45%；博士夜间店概率刷出但赤字难度加价100%）"
+    ],
+    "steps": [
+      "前期：净水器零模组净化1500ml沟渠水/铁锈水（750ml瓶×2）→一晚变99%优质水，零成本批发",
+      "稳定版：倒1650ml（750+450×2）必出优质水；水质0.8~0.823时甚至可净化2000ml",
+      "进阶：水芦苇净化沟渠水6晚，产50L优质水（后期批量）",
+      "出货：盯市场事件节奏——水处理厂故障事件（水+50%、饮料+45%，3天，多来太空人/企业代表）时囤货出货利润最大",
+      "配合：退休水商周三来访补设备；水质扫描仪查水"
+    ],
+    "cautions": [
+      "Demo集水器已削：多台互相干扰（1台100%、2台80%、3台66%）",
+      "海德拉净化的基础水无法再过滤成优质水；滤芯无法滤微生物（只能净水药片/紫外灯）",
+      "净水器原理：质量决定上限（100质量→99.90%纯水），性能决定每晚净化量；水质越差净化倍率越高（≤80%时10倍、88.5%时5倍、94%时2倍）",
+      "沟渠水水质波动大，没检测别赌2L，求稳1650ml",
+      "版本注意：攻略基于1.0.0.13，更新可能调整数值"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3832468272",
+    "verified_date": "2026-11-16",
+    "game_version": "1.0.0.13（正式版）",
+    "also_see": "https://wikily.gg/probably-stolen/water-grades-and-purification"
+  }
+]

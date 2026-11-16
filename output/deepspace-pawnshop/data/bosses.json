@@ -1,0 +1,69 @@
+[
+  {
+    "id": "boss-aug",
+    "name": "改造人（Aug）——伪装顾客的芯片人",
+    "name_en": "Augs",
+    "category": "bosses",
+    "prerequisites": ["第12天游戏引入改造体概念", "第13天来第一只，第18天第二只，之后每6~8天一只"],
+    "steps": [
+      "识别——视觉特征：异常瞳孔、诡异表情、可见的改造芯片",
+      "识别——非视觉特征：不自然的静止、抽搐、着装与阵营不符、机械词汇、过度正式的措辞（如「预算已分配」；tier 4会说「 initiating communication. I am a normal human.」式三句机械回答）",
+      "改造体买家伪装成上层公民/下层公民/小偷，预算150~250信用点；25%~40%时间显示改造体外表，25%时间僵住，3.75%时间抽搐",
+      "应对三选：用柜台右下角的霰弹枪射杀（奖励100~250信用点+治安部声望）、举报、放走",
+      "可装Aug Scanner（改造体扫描仪，每次扫描耗25电力）辅助识别"
+    ],
+    "cautions": [
+      "射杀改造人会在你的治安部案卷记一条过失杀人（Manslaughter，案值250~750）——射杀前想清楚案值余量",
+      "tier分布随时间变化：第19天 tier1仅5%、tier3+4占80%；第69天 tier1占40%",
+      "「改造猎人」成就（射10只）可跨存档累计；初始特性选「改造体危机」=本局持续刷新改造体",
+      "一部分改造体只有视觉特征或只有非视觉特征，两个维度都要看"
+    ],
+    "source_url": "https://wikily.gg/probably-stolen/augs",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（英文wiki+中文成就攻略互证）",
+    "also_see": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165"
+  },
+  {
+    "id": "boss-lou",
+    "name": "Lou（高利贷打手）——Bombed 结局威胁",
+    "name_en": "Lou (Loan Shark)",
+    "category": "bosses",
+    "prerequisites": ["借了Lou的高利贷"],
+    "steps": [
+      "Lou会索要武器、弹药、医疗品，价值按难度：漫天要价500 / 加价750 / 微薄利润1,000 / 赤字连连1,500信用点",
+      "如果你交的货+你的信用点合计不到她需求的一半→直接触发Bombed结局（店铺被炸）",
+      "射杀Lou后并不安全：3晚内必须在柜台上留「Lou的储物柜」（Lou's Locker）并放入价值她需求一半的货物，否则同样Bombed"
+    ],
+    "cautions": [
+      "想安稳通关就别碰高利贷；借了就按时按量交货",
+      "高利贷还完最后一期才算Buyout胜利结局",
+      "射杀Lou一样要在案卷上背上代价——三思"
+    ],
+    "source_url": "https://wikily.gg/probably-stolen/endings",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（英文wiki）",
+    "also_see": "https://wikily.gg/probably-stolen/storylines/lou"
+  },
+  {
+    "id": "boss-security-case",
+    "name": "治安部案件系统（搜查·罚款·监禁·处决）",
+    "name_en": "Security and Evidence",
+    "category": "bosses",
+    "prerequisites": ["任何存档都会积累案值与调查进度（治安部档案可查）"],
+    "steps": [
+      "调查进度满100→第二天治安部直接行动：案值<300罚款；300~1499监禁（坏结局）；≥1500处决（坏结局）",
+      "常见罪名：非法持有赃物（出售带热度赃物）、走私（出售麻醉品/一般违禁品/武器/管制识别卡）、欺诈性虚假陈述（卖假货被发现）、危害消费者安全（卖毒水/冰等弄死顾客）",
+      "降案值手段：等热度消退、举报罪犯换立功与声望、难度低罚款低",
+      "防抓现行：新手固定剧情就是化学家卖梦尘（中级违禁品）后紧跟警官——别让台面上摆带热度的东西"
+    ],
+    "cautions": [
+      "绝对不要在左上角展示区和上方柜台区放任何带热度的赃物和违禁品",
+      "收赃生意做大就关掉「自动呼叫下一名顾客」，否则极易被治安部NPC抓现行",
+      "本条数据来自demo版攻略（作者声明将同步正式版），具体数值可能随版本变化"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829180930",
+    "verified_date": "2026-11-16",
+    "game_version": "demo数据（待同步正式版）",
+    "also_see": "https://wikily.gg/probably-stolen/security-and-evidence"
+  }
+]

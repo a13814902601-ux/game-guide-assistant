@@ -1,0 +1,1554 @@
+[
+ {
+  "id": "22-magazine",
+  "name": ".22口径弹匣",
+  "name_en": ".22 Magazine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D 打印耗材",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：15 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 .22 Magazine)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "10mm-magazine",
+  "name": "10毫米弹匣",
+  "name_en": "10mm Magazine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：废金属 x3",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：30 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 10MM Magazine) and the Metal Printer Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "alarm-system-ruined-parts",
+  "name": "警报系统（损毁）零件",
+  "name_en": "Alarm System (Ruined) parts",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：警报系统（已损坏）",
+   "机器：手工（By hand）",
+   "产出：3 Metal Screws, 3 Wire, 4 Scrap Metal",
+   "参考价值：Machine worth 95 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：The Screwdriver takes the screws and the Wire Cutter the wire, each for 33% of the machine's value. The Plasma Cutter takes the scrap and destroys the machine."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "animal-feces",
+  "name": "动物粪便",
+  "name_en": "Animal Feces",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：清洁机器人"
+  ],
+  "steps": [
+   "原料：笼中动物粪便",
+   "机器：清洁机器人（Cleaner Robot）",
+   "产出：Collected into its storage",
+   "参考价值：No value"
+  ],
+  "cautions": [
+   "备注（原文）：Each night. With Electronic Parts (Common) fitted it gets an incinerator that burns the stored feces."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "birth-control-pill",
+  "name": "避孕药",
+  "name_en": "Birth Control Pill",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：避孕激素 0.1 毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：15 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 0.1 ml in a dry container. The share of Contraceptive Hormones sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "blended-liquid",
+  "name": "混合液体",
+  "name_en": "Blended liquid",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：搅拌机"
+  ],
+  "steps": [
+   "原料：可混合物品",
+   "机器：搅拌机（Blender）",
+   "产出：Their contents in the container",
+   "参考价值：By contents"
+  ],
+  "cautions": [
+   "备注（原文）：Loses 35% with no Chemical Equipment Module, 20% with 1, 10% with 2, 5% with 3, none with 4."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "bloomberry",
+  "name": "布洛姆莓",
+  "name_en": "BloomBerry",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：花莓种子",
+   "机器：水培系统（Hydroponic System）",
+   "产出：Makes 6",
+   "参考价值：14 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Grows in 3 nights. The plant stays and fruits again after 2 more nights."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "bloomberry-wine",
+  "name": "布洛姆莓酒",
+  "name_en": "BloomBerry Wine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：酒瓶"
+  ],
+  "steps": [
+   "原料：花莓，至少 749 毫升水",
+   "机器：酒瓶（Wine Bottle）",
+   "产出：x1 BloomBerry Wine",
+   "参考价值：100 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Ferments in 4 nights without yeast, 2 with Yeast or the Yeast Bioreactor, 1 with Super Yeast. The Yeast Bioreactor is kept. Aging adds 3 Credits of value per night; the quality tier stays the same."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "bottle-of-water-large",
+  "name": "大瓶装水",
+  "name_en": "Bottle of Water (Large)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：瓶子打印机"
+  ],
+  "steps": [
+   "原料：每瓶 11 千焦",
+   "机器：瓶子打印机（Bottle Printer）",
+   "产出：Makes 1",
+   "参考价值：9 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs 9 Electronic Parts (Common) fitted to the printer."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "bottle-of-water-small",
+  "name": "小瓶装水",
+  "name_en": "Bottle of Water (Small)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D 打印耗材",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 6",
+   "参考价值：4 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x6 Small Plastic Bottle)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "bottle-of-water-small",
+  "name": "小瓶装水",
+  "name_en": "Bottle of Water (Small)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：瓶子打印机"
+  ],
+  "steps": [
+   "原料：每瓶 4 千焦",
+   "机器：瓶子打印机（Bottle Printer）",
+   "产出：Makes 1",
+   "参考价值：4 Credits"
+  ],
+  "cautions": [],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "bottle-of-water-standard",
+  "name": "标准瓶装水",
+  "name_en": "Bottle of Water (Standard)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：瓶子打印机"
+  ],
+  "steps": [
+   "原料：每瓶 6 千焦",
+   "机器：瓶子打印机（Bottle Printer）",
+   "产出：Makes 1",
+   "参考价值：5 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs 3 Electronic Parts (Common) fitted to the printer."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "box-cutter",
+  "name": "美工刀",
+  "name_en": "Box Cutter",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：2 块废金属、1 份 3D 打印耗材",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 3",
+   "参考价值：28 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x3 Box Cutter)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "caffeine-pill",
+  "name": "咖啡因药片",
+  "name_en": "Caffeine Pill",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：咖啡因 5 毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：10 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 5 ml in a dry container. The share of Caffeine sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "caviar",
+  "name": "鱼子酱",
+  "name_en": "Caviar",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手术工具组"
+  ],
+  "steps": [
+   "原料：装满鱼卵罐的鲟鱼",
+   "机器：手术工具组（Surgery Toolset）",
+   "产出：Caviar or Sturgeon Roe",
+   "参考价值：240 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Jars 1 to 10 give Caviar, jars 11 to 16 alternate, later jars give Sturgeon Roe."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "chemical-supplies-common-unpacked",
+  "name": "普通化学品（未包装）",
+  "name_en": "Chemical Supplies (Common), unpacked",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：化学用品（普通）",
+   "机器：手工（By hand）",
+   "产出：2 Mini Alcohol Bottle, Bottle of Lipobond Agent, Bottle of Acidic Solution, Bottle of Basic Solution",
+   "参考价值：Crate worth 50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Use the crate to unpack it."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "chemical-supplies-restricted-unpacked",
+  "name": "受限化学品（未包装）",
+  "name_en": "Chemical Supplies (Restricted), unpacked",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：化学用品（受限）",
+   "机器：手工（By hand）",
+   "产出：2 Bottle of N-Methylol Base, Bottle of Reducing Agent",
+   "参考价值：Crate worth 100 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Use the crate to unpack it."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "chilled-drinks",
+  "name": "冷藏饮料",
+  "name_en": "Chilled drinks",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：冰箱"
+  ],
+  "steps": [
+   "原料：饮品、水、贝氏优质香草冰淇淋、努德卡",
+   "机器：冰箱（Fridge）",
+   "产出：Chilled +20%, Frozen +25%, Ice Cold +25% value",
+   "参考价值：+20% to +25% value"
+  ],
+  "cautions": [
+   "备注（原文）：Drinks, water rations and premium bottled water get Chilled in either zone. The ice cream gets Frozen in the Freeze Zone. Nudka is Chilled in the Chill Zone and Ice Cold in the Freeze Zone. Needs power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "coffee-beans",
+  "name": "咖啡豆",
+  "name_en": "Coffee Beans",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：咖啡豆",
+   "机器：水培系统（Hydroponic System）",
+   "产出：Makes 8",
+   "参考价值：28 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Grows in 3 nights."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "combat-knife",
+  "name": "军刀",
+  "name_en": "Combat Knife",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：金属锭 x2",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 5",
+   "参考价值：75 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x5 Combat Knife) and the Metal Printer Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "combat-machete",
+  "name": "军用砍刀",
+  "name_en": "Combat Machete",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：金属锭 x3",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 3",
+   "参考价值：185 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x3 Combat Machete) and the Metal Printer Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "disposable-keycard-command",
+  "name": "一次性权限卡（指挥官）",
+  "name_en": "Disposable Keycard (Command)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：密码破序器"
+  ],
+  "steps": [
+   "原料：任意门禁卡",
+   "机器：密码破序器（Cryptographic Desequencer）",
+   "产出：Makes 1",
+   "参考价值：125 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Cryptographic Desequencer Chip (Command), which is kept, and power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "disposable-keycard-engineering",
+  "name": "一次性权限卡（工程）",
+  "name_en": "Disposable Keycard (Engineering)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：密码破序器"
+  ],
+  "steps": [
+   "原料：任意门禁卡",
+   "机器：密码破序器（Cryptographic Desequencer）",
+   "产出：Makes 1",
+   "参考价值：75 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Cryptographic Desequencer Chip (Engineering), which is kept, and power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "disposable-keycard-medical",
+  "name": "一次性权限卡（医疗）",
+  "name_en": "Disposable Keycard (Medical)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：密码破序器"
+  ],
+  "steps": [
+   "原料：任意门禁卡",
+   "机器：密码破序器（Cryptographic Desequencer）",
+   "产出：Makes 1",
+   "参考价值：75 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Cryptographic Desequencer Chip (Medical), which is kept, and power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "disposable-keycard-security",
+  "name": "一次性权限卡（安保）",
+  "name_en": "Disposable Keycard (Security)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：密码破序器"
+  ],
+  "steps": [
+   "原料：任意门禁卡",
+   "机器：密码破序器（Cryptographic Desequencer）",
+   "产出：Makes 1",
+   "参考价值：100 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Cryptographic Desequencer Chip (Security), which is kept, and power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "disposable-keycard-service",
+  "name": "一次性权限卡（服务）",
+  "name_en": "Disposable Keycard (Service)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：密码破序器"
+  ],
+  "steps": [
+   "原料：任意门禁卡",
+   "机器：密码破序器（Cryptographic Desequencer）",
+   "产出：Makes 1",
+   "参考价值：40 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Cryptographic Desequencer Chip (Service), which is kept, and power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "distillate",
+  "name": "蒸馏液",
+  "name_en": "Distillate",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：蒸发器"
+  ],
+  "steps": [
+   "原料：装有混合液体的容器",
+   "机器：蒸发器（Evaporator）",
+   "产出：Up to 300 ml of water, alcohol and lipobond agent removed per night",
+   "参考价值：By contents"
+  ],
+  "cautions": [
+   "备注（原文）：The removed liquid goes to the distillate container, scaled by quality. Needs power, 6 kJ per night."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "dna-data-disk",
+  "name": "DNA数据盘",
+  "name_en": "DNA Data Disk",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：DNA 操纵器"
+  ],
+  "steps": [
+   "原料：种子、空白 DNA 数据盘",
+   "机器：DNA 操纵器（DNA Manipulator）",
+   "产出：1 DNA Data Disk with one trait of the seed",
+   "参考价值：140 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：The seed is destroyed unless a Genetic Stabilizer Module is fitted. Needs power, 12 kJ per night."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "dream-cap",
+  "name": "梦之帽",
+  "name_en": "Dream Cap",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：梦帽孢子",
+   "机器：水培系统（Hydroponic System）",
+   "产出：Makes 8",
+   "参考价值：23 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Grows in 4 nights. Returns 1 Dream Cap Spores, with a 25% chance of a second."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "extended-22-magazine",
+  "name": "加长版.22弹匣",
+  "name_en": "Extended .22 Magazine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D 打印耗材 x3",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：35 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 Ext. .22 Mag.)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "extended-10mm-magazine",
+  "name": "加长版10毫米弹匣",
+  "name_en": "Extended 10mm Magazine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：废金属 x3",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 1",
+   "参考价值：50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x1 Ext. 10MM Mag.) and the Metal Printer Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "fillerweed",
+  "name": "填充草",
+  "name_en": "Fillerweed",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：填充草种子",
+   "机器：水培系统（Hydroponic System）",
+   "产出：Makes 5",
+   "参考价值：11 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Grows in 1 night. One of the 5 is a Small Fillerweed. Returns 1 Fillerweed Seed, with a 50% chance of a second."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "fish-fillets",
+  "name": "鱼排",
+  "name_en": "Fish fillets",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：自动屠宰机"
+  ],
+  "steps": [
+   "原料：鱼",
+   "机器：自动屠宰机（Auto Butcher）",
+   "产出：Fillets by the fish's calories, Fish Scrap for a rest of 25 kcal or more",
+   "参考价值：By weight"
+  ],
+  "cautions": [
+   "备注（原文）：Graft Tilapia also give 1 Tilapia Skin Graft per 200 g. A Sturgeon's full egg jars become Caviar."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "fish-fry",
+  "name": "炸鱼块",
+  "name_en": "Fish fry",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：循环水养殖系统"
+  ],
+  "steps": [
+   "原料：受精卵",
+   "机器：循环水养殖系统（Recirculating Aquaculture System）",
+   "产出：6 fry, which grow into 6 juveniles",
+   "参考价值：By species"
+  ],
+  "cautions": [
+   "备注（原文）：Hatches over the nights in the tank."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "furnace-ruined-parts",
+  "name": "熔炉（残破）零件",
+  "name_en": "Furnace (Ruined) parts",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：熔炉（已损毁）",
+   "机器：手工（By hand）",
+   "产出：4 Metal Screws, 4 Wire, 5 Scrap Metal",
+   "参考价值：Machine worth 135 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：The Screwdriver takes the screws and the Wire Cutter the wire, each for 33% of the machine's value. The Plasma Cutter takes the scrap and destroys the machine."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "gloomberry-wine",
+  "name": "幽莓酒",
+  "name_en": "GloomBerry Wine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：酒瓶"
+  ],
+  "steps": [
+   "原料：合成酵母，至少749毫升水",
+   "机器：酒瓶（Wine Bottle）",
+   "产出：x1 GloomBerry Wine",
+   "参考价值：44 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Ferments in 2 nights. Mid-Level Contraband. Does not age."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "gun-parts",
+  "name": "枪械零件",
+  "name_en": "Gun Parts",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：金属锭",
+   "机器：3D打印机（3D Printer）",
+   "产出：x2 to x5",
+   "参考价值：25 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Gun Part 3D Printer Chip, which is kept, plus the Metal Printer Module and the Computer Numerical Control Module. Makes 2 from a Very Low Purity ingot, 3 from Low or Fair, 4 from High or Very High, 5 from Perfect."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "hatchet",
+  "name": "斧头",
+  "name_en": "Hatchet",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：4块废金属，3D打印耗材",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 4",
+   "参考价值：55 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x4 Hatchet)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "heated-liquid",
+  "name": "加热液体",
+  "name_en": "Heated liquid",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：加热板"
+  ],
+  "steps": [
+   "原料：一个容器",
+   "机器：加热板（Heating Plate）",
+   "产出：Heats it to 99°C",
+   "参考价值：By contents"
+  ],
+  "cautions": [
+   "备注（原文）：Heats to 160°C with 1 module, adjustable from 26 to 160°C with 2 or more."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "high-capacity-22-magazine",
+  "name": "大容量.22弹匣",
+  "name_en": "High Capacity .22 Magazine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D打印耗材 x2",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：25 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 High Cap. .22 Mag.)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "high-capacity-10mm-magazine",
+  "name": "大容量10毫米弹匣",
+  "name_en": "High Capacity 10mm Magazine",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：废金属 x2",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 1",
+   "参考价值：40 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x1 High Cap. 10MM Mag.) and the Metal Printer Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "hydroreed-filter",
+  "name": "水芦苇过滤器",
+  "name_en": "Hydroreed Filter",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：水芦苇种子",
+   "机器：水培系统（Hydroponic System）",
+   "产出：x1 per module",
+   "参考价值：20 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Makes 1 Hydroreed Filter per Hydroreed Filter Hydroponic Module. Grows in 3 nights. Returns 1 Hydroreed Seed, with a 50% chance of a second."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "improved-internal-springs",
+  "name": "强化内部弹簧",
+  "name_en": "Improved Internal Springs",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：废金属 x2",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 4",
+   "参考价值：20 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x4 Improved Internal Springs)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "ironcraft-10-frame",
+  "name": "铁匠10号框架",
+  "name_en": "Ironcraft 10 Frame",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：金属锭，废金属",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 1",
+   "参考价值：125 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Ironcraft 10 Frame 3D Printer Chip, the Metal Printer Module and the Computer Numerical Control Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "kitchen-knife",
+  "name": "厨房刀具",
+  "name_en": "Kitchen Knife",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3块废金属，3D打印耗材",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 4",
+   "参考价值：45 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x4 Kitchen Knife)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "kotton-fiber",
+  "name": "科顿纤维",
+  "name_en": "Kotton Fiber",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：棉花种子",
+   "机器：水培系统（Hydroponic System）",
+   "产出：Makes 13",
+   "参考价值：46 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Grows in 6 nights. Returns 2 Kotton Seeds above 80% health, 1 at 50% or less."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "laser-sight",
+  "name": "激光瞄准器",
+  "name_en": "Laser Sight",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：2块废金属，电子零件（普通）",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 Laser Sight)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "liberator-3d-printed-pistol",
+  "name": "解放者3D打印手枪",
+  "name_en": "Liberator 3D Printed Pistol",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D打印耗材 x2",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 1",
+   "参考价值：50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the .22 Pistol 3D Printer Chip."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "liberator-3d-printed-pistol",
+  "name": "解放者3D打印手枪",
+  "name_en": "Liberator 3D Printed Pistol",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D 打印耗材 x3",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 .22 Pistol)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "makeshift-red-dot-sight",
+  "name": "简易红点瞄准器",
+  "name_en": "Makeshift Red Dot Sight",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D打印耗材，电子零件（普通）",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 4",
+   "参考价值：25 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x4 Makeshift RDS)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "makeshift-suppressor",
+  "name": "简易消音器",
+  "name_en": "Makeshift Suppressor",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：废金属，小瓶水",
+   "机器：手工（By hand）",
+   "产出：Makes 1",
+   "参考价值：15 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Use the Scrap Metal on the bottle."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "meat-cleaver",
+  "name": "剁骨刀",
+  "name_en": "Meat Cleaver",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：5块废金属，2份3D打印耗材",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 4",
+   "参考价值：65 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x4 Meat Cleaver)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "metal-ingot",
+  "name": "金属锭",
+  "name_en": "Metal Ingot",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：熔炉"
+  ],
+  "steps": [
+   "原料：2块废金属或金属矿石",
+   "机器：熔炉（Furnace）",
+   "产出：Makes 1",
+   "参考价值：50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：A Flux Smelting Agent in the input adds at least 1 purity step. The Basic agent is used up, the Advanced one stays. Needs power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "metal-ingot-blast",
+  "name": "金属锭（爆炸）",
+  "name_en": "Metal Ingot (Blast)",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：熔炉"
+  ],
+  "steps": [
+   "原料：3块废金属或金属矿石",
+   "机器：熔炉（Furnace）",
+   "产出：Makes 2",
+   "参考价值：50 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Furnace Module (Blast). The ingots come out one purity step lower. Needs power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "moisture-farm-ruined-parts",
+  "name": "潮湿农场（废墟）零件",
+  "name_en": "Moisture Farm (Ruined) parts",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：湿度农场（已损毁）",
+   "机器：手工（By hand）",
+   "产出：5 Metal Screws, 5 Wire, 7 Scrap Metal",
+   "参考价值：Machine worth 195 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：The Screwdriver takes the screws and the Wire Cutter the wire, each for 33% of the machine's value. The Plasma Cutter takes the scrap and destroys the machine."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "nestfire-compact-frame",
+  "name": "巢火紧凑型框架",
+  "name_en": "Nestfire Compact Frame",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：金属锭",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 1",
+   "参考价值：88 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Nestfire Compact Frame 3D Printer Chip, the Metal Printer Module and the Computer Numerical Control Module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "nomore-injector",
+  "name": "诺莫注射器",
+  "name_en": "Nomore Injector",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：诺莫尔 4毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：50 Credits (28 at Cut Product grade)"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 4 ml in a dry container. The share of Nomore sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "nutrifruit",
+  "name": "营养果",
+  "name_en": "Nutrifruit",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：水培系统"
+  ],
+  "steps": [
+   "原料：营养果种子",
+   "机器：水培系统（Hydroponic System）",
+   "产出：Makes 7",
+   "参考价值：12 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Grows in 2 nights. Returns no seeds."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "phanta-pill",
+  "name": "幻能药丸",
+  "name_en": "Phanta Pill",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：凡塔 0.5毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：12 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 0.5 ml in a dry container. The share of Phanta sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "purified-water",
+  "name": "纯净水",
+  "name_en": "Purified water",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：净水器"
+  ],
+  "steps": [
+   "原料：一个装有脏水的液体容器",
+   "机器：净水器（Water Purifier）",
+   "产出：Cleaner water",
+   "参考价值：Water grade rises"
+  ],
+  "cautions": [
+   "备注（原文）：Each night it removes contaminants. Dirtier water is cleaned faster. Needs power, 4 kJ per night."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "rat",
+  "name": "老鼠",
+  "name_en": "Rat",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：捕鼠器"
+  ],
+  "steps": [
+   "原料：加工奶酪（可选）",
+   "机器：捕鼠器（Mouse Trap）",
+   "产出：x1 Rat, 3 to 7 days old",
+   "参考价值：By weight"
+  ],
+  "cautions": [
+   "备注（原文）：Each night: 50% catch chance with Processed Cheese, which is used up; otherwise a 25% chance the cheese is eaten. Empty trap: 1%."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "rat-meat-cuts",
+  "name": "鼠肉切块",
+  "name_en": "Rat meat cuts",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：自动屠宰机"
+  ],
+  "steps": [
+   "原料：老鼠",
+   "机器：自动屠宰机（Auto Butcher）",
+   "产出：Raw Meat (Standard) per 400 g, Raw Meat (Small) per 200 g, Morsel per 100 g, Small Morsel per 50 g",
+   "参考价值：By weight"
+  ],
+  "cautions": [
+   "备注（原文）：Cut by the rat's weight. A sick rat counts 75% of its weight."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "red-dot-sight",
+  "name": "红点瞄准器",
+  "name_en": "Red Dot Sight",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3块废金属，电子零件（普通）",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：60 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 RDS)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "restored-module",
+  "name": "修复模块",
+  "name_en": "Restored module",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：电子零件（普通），损坏模块",
+   "机器：手工（By hand）",
+   "产出：Performance, Efficiency or Quality Module",
+   "参考价值：70 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Use the Electronic Parts on a module that is not stuck. Performance Module 33%, Efficiency Module 22%, Quality Module 45%."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "ruined-module-parts",
+  "name": "废墟模块零件",
+  "name_en": "Ruined module parts",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：手工"
+  ],
+  "steps": [
+   "原料：已损毁模块",
+   "机器：手工（By hand）",
+   "产出：Electronic Parts (Common), 3D Printing Filament, Junk",
+   "参考价值：48 Credits in parts"
+  ],
+  "cautions": [
+   "备注（原文）：Use a Screwdriver on the module."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "scrap-metal",
+  "name": "废金属",
+  "name_en": "Scrap Metal",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：熔炉"
+  ],
+  "steps": [
+   "原料：废料 x6",
+   "机器：熔炉（Furnace）",
+   "产出：Makes 4",
+   "参考价值：10 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the Furnace Module (Junk Processing). Runs only on nights the Furnace made no Metal Ingot. Needs power."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "seed-with-a-stronger-trait",
+  "name": "具有更强性状的种子",
+  "name_en": "Seed with a stronger trait",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：DNA 操纵器"
+  ],
+  "steps": [
+   "原料：种子，已写入DNA的数据盘",
+   "机器：DNA 操纵器（DNA Manipulator）",
+   "产出：The same seed, +1 rank of the trait",
+   "参考价值：Value of the seed"
+  ],
+  "cautions": [
+   "备注（原文）：On success the seed gains 1 rank of the disk's trait. Needs power, 12 kJ per night."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "stored-calories",
+  "name": "储存热量",
+  "name_en": "Stored calories",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：牲畜饲料投喂器"
+  ],
+  "steps": [
+   "原料：食物、动物或鱼",
+   "机器：牲畜饲料投喂器（Livestock Feed Dispenser）",
+   "产出：Calories for the cage or tank, up to 40,000 kcal",
+   "参考价值：No item made"
+  ],
+  "cautions": [
+   "备注（原文）：Animals are butchered and fish filleted first, then everything is turned into calories."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "suppressor",
+  "name": "消音器",
+  "name_en": "Suppressor",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：废金属 x5",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 2",
+   "参考价值：55 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x2 Silencer)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "toy-laser-pointer",
+  "name": "玩具激光笔",
+  "name_en": "Toy Laser Pointer",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：3D打印机"
+  ],
+  "steps": [
+   "原料：3D打印耗材，电子零件（普通）",
+   "机器：3D打印机（3D Printer）",
+   "产出：Makes 4",
+   "参考价值：18 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs the 3D Printer Chip (x4 Toy Laser Pointer)."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "vial-of-dream-dust",
+  "name": "\"梦幻粉尘\"小瓶",
+  "name_en": "Vial of \"Dream Dust\"",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：梦帽提取物 2毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：18 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 2 ml in a dry container. The share of Dream Cap Extract sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "vial-of-nightmare-dust",
+  "name": "\"噩梦粉尘\"小瓶",
+  "name_en": "Vial of \"Nightmare Dust\"",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：噩梦提取物 4毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：36 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 4 ml in a dry container. The share of Nightmare Extract sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "water",
+  "name": "水",
+  "name_en": "Water",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：湿度农场"
+  ],
+  "steps": [
+   "原料：一个有剩余空间的容器",
+   "机器：湿度农场（Moisture Farm）",
+   "产出：850 ml of water per night",
+   "参考价值：By water grade"
+  ],
+  "cautions": [
+   "备注（原文）：Performance modules raise the amount, quality modules the water grade. Each extra running Moisture Farm lowers the output of all. Needs power, 6 kJ per night."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ },
+ {
+  "id": "zyanide-pill",
+  "name": "氰化物药丸",
+  "name_en": "Zyanide Pill",
+  "category": "recipes",
+  "prerequisites": [
+   "需要机器：化学处理机"
+  ],
+  "steps": [
+   "原料：氰化物 0.6毫升",
+   "机器：化学处理机（Chem Finisher）",
+   "产出：Makes 1",
+   "参考价值：33 Credits"
+  ],
+  "cautions": [
+   "备注（原文）：Needs at least 0.6 ml in a dry container. The share of Zyanide sets the purity grade."
+  ],
+  "source_url": "https://wikily.gg/probably-stolen/crafting-recipes",
+  "verified_date": "2026-11-16",
+  "game_version": "正式版（2026-10）"
+ }
+]

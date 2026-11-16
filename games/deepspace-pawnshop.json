@@ -1,0 +1,35 @@
+{
+  "game": "deepspace-pawnshop",
+  "name_zh": "深空当铺：可能是偷的",
+  "name_en": "Probably Stolen",
+  "steam_appid": 4348910,
+  "wikily_slug": "probably-stolen",
+  "ali213_zone": "https://gl.ali213.net/z/157497",
+  "sources": [
+    {
+      "id": "steam",
+      "url": "https://steamcommunity.com/app/4348910/guides/",
+      "note": "Steam 社区指南（中文为主）"
+    },
+    {
+      "id": "wikily",
+      "url": "https://wikily.gg/probably-stolen",
+      "note": "Wikily.gg 英文 wiki"
+    },
+    {
+      "id": "ali213",
+      "url": "https://gl.ali213.net/z/157497",
+      "note": "游民星空攻略专区"
+    },
+    {
+      "id": "bilibili",
+      "url": "https://www.bilibili.com/",
+      "note": "B站专栏与视频字幕"
+    },
+    {
+      "id": "xiaoheihe",
+      "url": "https://www.xiaoheihe.cn/",
+      "note": "小黑盒社区分享页"
+    }
+  ]
+}

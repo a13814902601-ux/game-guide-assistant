@@ -1,0 +1,25 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Local caches / logs / builds
+.cache/
+build/
+dist/
+*.spec
+overlay/logs/
+*.log
+
+# Local secrets / configs
+.env
+secrets*
+config*.json
+overlay-config.json
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "quest-main-buyout",
+    "name": "主线目标：买下店铺（获得地契通关）",
+    "category": "quests",
+    "prerequisites": [
+      "存够「房产当前价值」（日历右下角可见，一般12,000信用点起）"
+    ],
+    "steps": [
+      "攒钱到超过房产当前价值",
+      "在交房租的日子选择「买下店铺」",
+      "获得地契，达成Buyout结局（胜利，可继续玩）",
+      "另一条路：借高利贷买下，之后每期还贷，还完贷款才真正拿到地契"
+    ],
+    "cautions": [
+      "买店是全游戏唯一的两类胜利结局之一（全款买店 / 还完高利贷）",
+      "「少年得志」要求第50天前拿到地契——高利贷路线必超时",
+      "赚钱打法参考：养鼠人或水产+水培饲料，向治安部征用官和通缉犯约翰·史密斯卖食物"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "quest-wilde-network",
+    "name": "乔·王尔德人脉网络（服务解锁树）",
+    "category": "quests",
+    "prerequisites": [
+      "推进剧情解锁乔·王尔德的服务网络"
+    ],
+    "steps": [
+      "人脉网络里可点亮：退休化学家（化学路线）、退休农夫（农业路线）、植物基因（DNA编辑）、退休水商（周三来访卖净水器）、水资源交易、沟渠水直供（水商路线）、店铺翻新（吸引力）、超科技（通关后）等",
+      "不同成就/玩法需要不同组合：化学纯度→退休化学家；巨型营养果→退休农夫+植物基因；水商→水资源交易+沟渠水直供"
+    ],
+    "cautions": [
+      "超科技需通关后才能联系王尔德获得",
+      "店铺翻新影响「光鲜亮丽」的吸引力成就"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3832468272",
+    "verified_date": "2026-11-16",
+    "game_version": "1.0.0.13（正式版）"
+  },
+  {
+    "id": "quest-jackson-nightshop",
+    "name": "杰克逊博士夜间商店",
+    "category": "quests",
+    "prerequisites": [
+      "等到晚上（店铺打烊时段）"
+    ],
+    "steps": [
+      "杰克逊博士晚上开门营业",
+      "售卖：化学模组、化学设备模组、净水器（概率刷出）、模组舱扩建套件、节点等"
+    ],
+    "cautions": [
+      "赤字连连（高难）难度下加价100%",
+      "净水器优先找周三退休水商买（加价45%）"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "quest-george-liquid-luck",
+    "name": "乔治奥剧情线（液体好运）",
+    "category": "quests",
+    "prerequisites": [
+      "顾客乔治奥出现"
+    ],
+    "steps": [
+      "持续与乔治奥互动",
+      "他会赠送一瓶「液体好运」（使用后3天+75幸运）",
+      "之后有机会花钱向他买三瓶"
+    ],
+    "cautions": [
+      "配合刮刮乐头奖成就：喝药后买光所有刮刮乐，没中就S/L"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "quest-zhi anbu-zhiyongling",
+    "name": "治安部征用令（征用官定期收购）",
+    "category": "quests",
+    "prerequisites": [
+      "与治安部保持关系",
+      "准备好食物和医疗物资"
+    ],
+    "steps": [
+      "治安部征用官会造访店铺",
+      "他购买食物和医疗物资",
+      "持续交易提升治安部声望"
+    ],
+    "cautions": [
+      "是与治安部搞好关系最快的方式之一，高难开局稳定收入来源"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "quest-john-smith",
+    "name": "通缉犯约翰·史密斯（每周收食物）",
+    "category": "quests",
+    "prerequisites": [
+      "剧情推进遇到通缉犯约翰·史密斯"
+    ],
+    "steps": [
+      "他每周来收食物",
+      "预算无限增长——有多少食物卖多少",
+      "是「少年得志」速通攒钱的核心客户之一"
+    ],
+    "cautions": [
+      "他是通缉犯：也可以选择举报（拿声望+成就「告密致富」），但会失去这个大客户"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829981165",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版"
+  },
+  {
+    "id": "quest-market-events",
+    "name": "市场随机事件系统（Bottomline Bulletin 报纸）",
+    "category": "quests",
+    "prerequisites": [
+      "游戏到第6天触发首个随机事件；第8天起看柜台上的报纸"
+    ],
+    "steps": [
+      "事件会改变物价并带来额外顾客，最多3个事件同时进行，共15种随机市场事件",
+      "示例——营养果种子劫案：食物+33%、种子+50%，持续2天，额外来农民顾客（营养果种子在剧情中被释放后停止）",
+      "示例——水处理厂故障：水与水配给+50%、饮料+45%、净水用品+40%，持续3天，额外来太空人/企业代表",
+      "示例——冰陨石矿工归来：水-25%、饮料-20%，持续2天，额外来冰矿工"
+    ],
+    "cautions": [
+      "柜台报纸（The Bottomline Bulletin）列出当前所有进行中的事件——每天记得看",
+      "事件是水商/食物商囤货出货的节奏器"
+    ],
+    "source_url": "https://wikily.gg/probably-stolen/events",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（英文wiki，事件名机翻参考）"
+  },
+  {
+    "id": "quest-case-file",
+    "name": "治安部档案（犯罪进度查询）",
+    "category": "quests",
+    "prerequisites": [
+      "初次游玩：剧情推进后导师赠送；非初次：游戏开始时默认在档案箱里"
+    ],
+    "steps": [
+      "打开治安部档案",
+      "重点看两个条目：涉嫌犯罪活动（案值）和调查进度",
+      "调查进度满100→第二天治安部行动：案值<300罚款；300~1499监禁；≥1500处决"
+    ],
+    "cautions": [
+      "监禁和处决都是坏结局",
+      "调查进度与案值高度相关，控制案值是核心"
+    ],
+    "source_url": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829180930",
+    "verified_date": "2026-11-16",
+    "game_version": "demo数据（作者声明将逐步同步正式版）"
+  },
+  {
+    "id": "quest-endings",
+    "name": "结局总览（15种结局，2种胜利）",
+    "category": "quests",
+    "prerequisites": [],
+    "steps": [
+      "胜利（Buyout，可继续玩）：①全款买下店铺；②还完高利贷最后一期",
+      "失败-房租债务：①欠租未付（无宽限）；②断供（抵押品不足）；③Lou的炸弹（Bombed）",
+      "失败-治安：①被捕（案值300~1499判刑/未交罚款/高危违禁品被查无豁免）；②处决（案值≥1500）；③被陷害（Framed）"
+    ],
+    "cautions": [
+      "全游戏只有买店两种结局算赢，其余全是坏结局",
+      "各结局触发条件详见知识库 wikily/endings 全文"
+    ],
+    "source_url": "https://wikily.gg/probably-stolen/endings",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（英文wiki）"
+  },
+  {
+    "id": "quest-newbie-guide",
+    "name": "新手开荒总攻略（序盘→鉴定→资金→制造→声望）",
+    "category": "quests",
+    "prerequisites": [
+      "新手开局（任何难度，建议普通先熟悉系统）"
+    ],
+    "steps": [
+      "① 完整走完教程（解锁成就「第一步」）：教程演示鉴定、交易、设备制造核心系统，不要跳过",
+      "② 以买下店铺所有权为目标规划现金流：不要只看单次利润，有意识存钱（第50天前买下还能拿「少年得志」）",
+      "③ 收货必鉴定，练出完美鉴定习惯（估值与真实价值差5%以内，累计10次拿「慧眼识值」）",
+      "④ 资金管理：房租随进程上涨（普通难度每周+5%），永远预留房租现金防止资金链断裂",
+      "⑤ 推定总资产与现金分开统计：日历旁「信用点余额」可查；过1万拿「衣食无忧」，过10万拿「富可敌国」——成就判定在新一天开始的瞬间",
+      "⑥ 解锁设备后把生产纳入盈利：机械品质+250拿「火力全开」、同日10台机械拿「勤勉不辍」、水培巨型营养果拿「绿手指」",
+      "⑦ 派系声望：任意阵营拉满拿「长袖善舞」（推荐治安部，举报违禁品/赃物/通缉犯都加）",
+      "⑧ 特殊剧本后挑战：谷底开局（一贫如洗）通关拿「白手起家」，困难难度谷底拿「白手起家，艰难之路」"
+    ],
+    "cautions": [
+      "赃物/违禁品倒卖收益高但增加案值——「干净的手」成就玩家全程不卖（建议连买都别买）",
+      "房租压力：周天交租，涨完才通知（差2天内开始提醒）；现金断链=坏结局",
+      "成就判定节点在新一天开始的瞬间，日期切换前核对资产"
+    ],
+    "source_url": "https://gl.ali213.net/html/2026-11/1822803.html",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（游民星空中文攻略）",
+    "also_see": "https://steamcommunity.com/sharedfiles/filedetails/?id=3829320036"
+  },
+  {
+    "id": "quest-rent-mechanics",
+    "name": "房租机制与买店时机",
+    "category": "quests",
+    "prerequisites": [
+      "了解店铺是租的：房东每周日（第7/14/21…天）收租"
+    ],
+    "steps": [
+      "起始租金200信用点（普通难度Mark Up），每次交租后上涨：温馨模式+2.5%/周、普通+5%/周、困难+10%/周（向下取整，如200→209）",
+      "商店全款价格：普通难度12,000信用点（日历右下角显示当前价值）",
+      "营业许可证（Vendor Permit）：约第30天官员上门售卖，普通难度1,500信用点，与房租电费分开计算，可延期一周但必须买",
+      "买店时机：现金≥房产价值时，在周日交租日选「买下店铺」——越早买省越多房租"
+    ],
+    "cautions": [
+      "欠租（无宽限）=结局「You Defaulted On Your Rent」",
+      "高利贷买店要还完贷款才拿地契，会拖过50天（影响「少年得志」）",
+      "交租日差2天时开局屏幕才会提醒，自己记日历"
+    ],
+    "source_url": "https://wikily.gg/probably-stolen/rent-and-buying-the-store",
+    "verified_date": "2026-11-16",
+    "game_version": "正式版（英文wiki）"
+  }
+]
