@@ -5,16 +5,81 @@
 
 ![悬浮窗截图](docs/screenshots/overlay.png)
 
+- **Skill 是主力**：`game-guide-qa` 决定“什么时候查、查什么、怎么答、什么时候拒答”，是项目的策略层
 - **悬浮窗**：置顶、半透明、可拖拽缩放，`F8` 全局显示/隐藏，不切屏问攻略
 - **只依据知识库回答**：按「前置条件 / 步骤 / 注意事项 / 来源」给答案；查不到就说“知识库暂未收录”，不编造
 - **来源可点击**：答案里的 http(s) 网址自动变成可点击链接
 - **MCP 服务器**：5 个查询工具，ZCode / 任意 MCP 客户端可接
-- **技能**：`game-guide-qa` 规定答案格式、防剧透、防编造
 - **知识库外挂**：exe 不内置攻略数据，读取外部 `output/` 目录；MCP 与悬浮窗共用同一份
+
+> **先看 Skill**：这个项目的核心不是界面，而是
+> [`skills/game-guide-qa/SKILL.md`](skills/game-guide-qa/SKILL.md)。
+> 它是一份“问答操作规程”：规定先查结构化数据、再查全文、列表必须报数量、
+> 剧透先警告、查不到必须拒答。MCP 和悬浮窗都只是按这份规程执行。
+> 完整拆解见 **[Skill 功能与实现详解](docs/skill-game-guide-qa.md)**。
 
 > **公开版说明**：本仓库包含 **135 条结构化攻略数据**、查询层、MCP 服务器、技能和悬浮窗代码；
 > **不包含** 696 篇第三方攻略全文（版权原因）。因此“全文检索兜底”在公开版默认关闭，
 > 需要时可按来源 URL 自行采集到 `output/<game>/guides/`。详见 [数据说明](output/deepspace-pawnshop/README.md)。
+
+## Skill 是主力
+
+这个项目分成四层，**Skill 是策略层，其他层都听它的**：
+
+| 层 | 负责什么 | 位置 |
+|---|---|---|
+| **Skill（主力）** | 判断问题类型；决定先查结构化还是全文；规定答案格式；列表报数量；剧透警告；查不到拒答 | `skills/game-guide-qa/SKILL.md` |
+| MCP | 提供 5 个查询工具，把知识库能力暴露给 AI 客户端 | `mcp_server/server.py` |
+| 知识库 | 135 条结构化数据 + 可选攻略全文 | `output/<game>/` |
+| 悬浮窗 | 游戏内 UI、快捷键、模型调用；复用同一份 Skill 规则 | `overlay/` |
+
+### 它解决什么问题
+
+没有 Skill 时，模型容易：
+
+- 凭训练记忆编数值（价格、天数、悬赏金额）
+- 只搜到 1 个通缉犯就说“全部就这些”
+- 用自己习惯的格式回答，来源缺失
+- 直接剧透结局
+- 知识库没有也硬答
+
+Skill 把这些行为写成**硬规则**，让 MCP 工具“有工具可用”变成“知道什么时候用、怎么用、用完怎么答”。
+
+### 一次问答的完整链路
+
+以「通缉犯有哪几个？」为例：
+
+1. Skill 判断这是**列表/数量类问题**，触发列表硬规则。
+2. 调 `list_games` 确认游戏已收录。
+3. 调 `search_data(game, "通缉犯")` 搜结构化数据（中英术语桥会自动扩展到 `wanted`）。
+4. 命中「通缉名单机制总览」等条目；必要时 `get_entry` 取整条。
+5. 调 `search_guides` 做全文兜底，中英文各搜一次。
+6. 按固定格式回答：前置条件 / 步骤 / 注意事项 / 来源；写明「知识库共收录 9 名初始通缉犯」。
+7. 如果两边都没命中，回答「知识库暂未收录」，不调模型编造。
+
+### MCP 工具表
+
+| 工具 | 作用 |
+|---|---|
+| `list_games` | 确认游戏是否收录、有哪些分类、数据量 |
+| `search_data` | 按关键词搜结构化数据；可按分类过滤 |
+| `get_entry` | 按名称/id 取整条数据（前置条件、步骤、注意事项、来源） |
+| `search_guides` | 全文检索攻略库，返回命中文件与行号 |
+| `get_guide` | 读取指定攻略全文 |
+
+### 为什么悬浮窗也用同一份 Skill
+
+悬浮窗的 `overlay/core/prompt.py` 会在启动时读取 `skills/game-guide-qa/SKILL.md`，
+去掉 frontmatter 后注入系统提示词；`overlay/core/kb_bridge.py` 先替模型完成检索，
+把命中的结构化条目和全文摘录放进上下文。这样：
+
+- ZCode 里：Skill 驱动模型调用 MCP 工具
+- 悬浮窗里：Skill 作为系统提示词约束模型，检索由本地代码完成
+
+两条路的**答案规则完全一致**：同样的格式、同样的列表数量要求、同样的拒答逻辑。
+
+> 详细拆解（触发机制、frontmatter、实现代码、扩游戏/扩工具、排障）：
+> **[docs/skill-game-guide-qa.md](docs/skill-game-guide-qa.md)**
 
 ## 快速开始
 
@@ -79,16 +144,26 @@ python -m venv .venv
 ## 架构
 
 ```
-公开攻略页面 ──(本地采集器，未随仓库分发)──> output/<game>/data/*.json
-                                                   │  (可选) guides/*.md
-                                                   │
-                                         kb/query.py  ←── 查询核心
-                                          │        │
-                          mcp_server/server.py   overlay/core/kb_bridge.py
-                                          │        │
-                                   ZCode + 技能   悬浮窗 → OpenAI 兼容 LLM
+                 ┌────────────────────────────────────────────┐
+                 │  Skill: game-guide-qa（策略层，主力）        │
+                 │  何时查 / 查什么 / 怎么答 / 何时拒答          │
+                 └───────────────┬────────────────────────────┘
+                                 │
+          ┌──────────────────────┴──────────────────────┐
+          │                                             │
+  ZCode 对话（Skill 调工具）                     悬浮窗（Skill 注入提示词）
+          │                                             │
+  mcp_server/server.py                        overlay/core/kb_bridge.py
+          │                                             │
+          └───────────────┬─────────────────────────────┘
+                          │
+                    kb/query.py  ←── 查询核心
+                          │
+                    output/<game>/
+                    data/*.json + (可选) guides/*.md
 ```
 
+- **Skill 是策略层**：它不存数据、不实现查询，但决定 AI 的行为边界。
 - 攻略库归 MCP：`output/` 是唯一数据源，MCP 和悬浮窗都读它。
 - exe 只打包界面、查询客户端和技能规则，**不打包 `output/`**。
 - 模型走 OpenAI 兼容接口；密钥只保存在本机 `%APPDATA%\GameGuideAssistant\overlay-config.json`。
@@ -163,12 +238,13 @@ overlay/                 PySide6 悬浮窗
   ui/                    窗口、聊天、设置
 kb/                      查询核心（MCP 与悬浮窗共用）
 mcp_server/server.py     fastmcp stdio 服务器（5 个工具）
-skills/game-guide-qa/    问答技能规则
+skills/game-guide-qa/    问答技能规则（主力）
 games/                   游戏配置
 output/<game>/data/      结构化攻略数据（公开版）
 output/<game>/guides/    攻略全文（公开版不含，可自行补充）
 scripts/                 CLI 调试、自测、打包
 docs/screenshots/        界面截图
+docs/skill-game-guide-qa.md   Skill 功能与实现详解
 ```
 
 ## 隐私
