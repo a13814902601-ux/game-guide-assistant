@@ -9,27 +9,32 @@
     {
       "id": "steam",
       "url": "https://steamcommunity.com/app/4348910/guides/",
-      "note": "Steam 社区指南（中文为主）"
+      "note": "Steam 社区指南（中文为主）",
+      "pipeline": true
     },
     {
       "id": "wikily",
       "url": "https://wikily.gg/probably-stolen",
-      "note": "Wikily.gg 英文 wiki"
+      "note": "Wikily.gg 英文 wiki",
+      "pipeline": true
     },
     {
       "id": "ali213",
       "url": "https://gl.ali213.net/z/157497",
-      "note": "游民星空攻略专区"
+      "note": "游民星空攻略专区",
+      "pipeline": true
     },
     {
       "id": "bilibili",
       "url": "https://www.bilibili.com/",
-      "note": "B站专栏与视频字幕"
+      "note": "B站专栏与视频字幕",
+      "pipeline": false
     },
     {
       "id": "xiaoheihe",
       "url": "https://www.xiaoheihe.cn/",
-      "note": "小黑盒社区分享页"
+      "note": "小黑盒社区分享页",
+      "pipeline": false
     }
   ]
 }
