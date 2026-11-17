@@ -17,7 +17,7 @@ def set_output_dir(path: str | Path) -> Path:
 def get_output_dir() -> Path:
     return OUTPUT
 
-from kb.glossary import expand as expand_terms
+from kb.glossary import expand as expand_terms, game_pairs
 
 CATEGORIES = ("quests", "items", "bosses", "achievements", "recipes", "characters")
 
@@ -80,7 +80,7 @@ def search_data(game: str, keyword: str, category: str | None = None, limit: int
     kw = keyword.strip()
     if not kw:
         return []
-    terms = expand_terms(kw)
+    terms = expand_terms(kw, game_pairs(_game_dir(game)))
     cats = [category] if category else CATEGORIES
     hits = []
     for cat in cats:
@@ -122,7 +122,7 @@ def search_guides(game: str, keyword: str, limit: int = 8) -> list[dict]:
     kw = keyword.strip()
     if not kw:
         return []
-    terms = expand_terms(kw)
+    terms = expand_terms(kw, game_pairs(_game_dir(game)))
     results = []
     for md in sorted(_game_dir(game).glob("guides/**/*.md")):
         try:

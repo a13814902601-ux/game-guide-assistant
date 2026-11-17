@@ -154,6 +154,8 @@ output/your-game/
 
 - 每条必须带 `source_url` + `verified_date`；
 - demo/测试版数据标 `game_version`；
+- **每条尽量同时写 `name`（中文名）和 `name_en`（游戏内英文名）**：查询层会用这两列自动生成
+  该游戏的中英术语桥，中文问句才能命中英文 wiki 页；只有中文名时中文检索仍可用，但跨语言这条链会断；
 - 列表/数量类内容必须核对汇总页总数（9 名通缉犯、21 个成就）；
 - 英文术语可用 `scripts/translate_terms.py` 批量翻译（免费 Index-Translate 接口），
   中文名优先查中文攻略站，不要直接机翻当官方译名；
@@ -171,11 +173,15 @@ output/your-game/
 
 ### 阶段 4：查询层
 
-- `kb/query.py` 自动发现 `output/*/`，新游戏通常零改动；
-- `kb/glossary.py` 维护中英术语桥；新游戏出现“中文问题搜不中英文 wiki”时加词对；
+- `kb/query.py` 自动发现 `output/*/`，新游戏零改动；
+- **中英术语桥按游戏自动生成**：`kb/glossary.py` 的 `game_pairs()` 运行时读取当前游戏
+  `data/*.json` 的 `name` / `name_en`（含去括号短名），带 mtime 缓存；静态 `PAIRS`
+  只补数据里没有的通用说法（如 通缉犯↔Wanted、酿酒↔winemaking）；
+- 建库时 `name_en` 决定“中文问句能不能搜到英文 wiki 页”；新游戏接入先做双语自检：
+  中文名问一句、英文名问一句，都应命中同一条/同一页；
 - 分类增减要同步改 `CATEGORIES` 和 `mcp_server/server.py` 的工具描述；
 - 攻略源变多后注意“同分挤压”：英文 wiki 体量大时，中文攻略可能被挤出 top-N；
-  `search_guides` 已对标题行命中加权，必要时按源限流。
+  `search_guides` 已对标题行命中加权，悬浮窗还会按章节标题定位、短篇给全文。
 
 ### 阶段 5：装机与验收
 
@@ -185,10 +191,19 @@ output/your-game/
 .venv\Scripts\python.exe scripts\test_mcp_smoke.py
 ```
 
-2. 四问实测：成就、道具/流派、任务、**反例**（别的游戏必须“未收录”）。
-3. 每个新分类至少问一次，验证第一条命中。
-4. 装 MCP + `game-guide-qa` 技能，重启宿主真机验证。
-5. 驾驶员人工验收：列表数量、来源、剧透、拒答。
+2. 多游戏通用性回归：
+
+```bash
+.venv\Scripts\python.exe scripts\test_overlay.py --skip-llm
+```
+
+内含临时假游戏 `test-game`（只有中文名「月光草」+ 纯英文攻略 `Moonlight Herb`），
+验证「中文提问 → 自动术语桥 → 命中英文全文」这条链没断。
+
+3. 四问实测：成就、道具/流派、任务、**反例**（别的游戏必须“未收录”）。
+4. 每个新分类至少问一次，验证第一条命中。
+5. 装 MCP + `game-guide-qa` 技能，重启宿主真机验证。
+6. 驾驶员人工验收：列表数量、来源、剧透、拒答。
 
 ## 3. 公开版与完整版的区别
 

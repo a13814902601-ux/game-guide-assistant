@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+import json
 import sys
 import tempfile
 from pathlib import Path
@@ -89,6 +90,9 @@ def test_retrieval():
     check("配方识别分类", r.intent_category == "recipes")
     check("配方总数 74", r.category_index.get("recipes", {}).get("total") == 74)
 
+    r = kb_bridge.retrieve(game, "花莓要如何获得？")
+    check("动态术语桥命中中文别名", any("布洛姆莓" in x["entry"].get("name", "") for x in r.entries))
+
     guides_dir = Path(__file__).resolve().parents[1] / "output" / game / "guides"
     has_guides = guides_dir.is_dir() and any(guides_dir.rglob("*.md"))
     if has_guides:
@@ -104,6 +108,70 @@ def test_retrieval():
     context = r.context()
     check("上下文含统计", "知识库统计" in context and "本次展开" in context)
     check("上下文带来源", "来源：" in context)
+
+
+def test_multi_game():
+    print("[多游戏通用性]")
+    with tempfile.TemporaryDirectory() as tmp:
+        root = Path(tmp)
+        game = "test-game"
+        gdir = root / game
+        (gdir / "data").mkdir(parents=True)
+        (gdir / "guides" / "test").mkdir(parents=True)
+        (gdir / "_index.json").write_text(
+            json.dumps(
+                {
+                    "game": game,
+                    "name_zh": "测试游戏",
+                    "name_en": "Test Game",
+                    "data": {"total": 2, "categories": {"items": 1, "recipes": 1}},
+                    "guides": {"test": ["test/moonlight.md"]},
+                },
+                ensure_ascii=False,
+            ),
+            encoding="utf-8",
+        )
+        entries = [
+            {
+                "id": "moonlight-herb",
+                "name": "月光草",
+                "name_en": "Moonlight Herb",
+                "category": "items",
+                "prerequisites": ["夜晚去河边"],
+                "steps": ["在河边采集月光草"],
+                "cautions": [],
+                "source_url": "https://example.com/moonlight",
+                "verified_date": "2026-11-17",
+            },
+            {
+                "id": "moonlight-potion",
+                "name": "月光药剂",
+                "name_en": "Moonlight Potion",
+                "category": "recipes",
+                "prerequisites": ["需要机器：炼金锅"],
+                "steps": ["原料：月光草 x2", "机器：炼金锅（Alchemy Pot）", "产出：x1 Moonlight Potion"],
+                "cautions": [],
+                "source_url": "https://example.com/potion",
+                "verified_date": "2026-11-17",
+            },
+        ]
+        (gdir / "data" / "items.json").write_text(json.dumps(entries[:1], ensure_ascii=False), encoding="utf-8")
+        (gdir / "data" / "recipes.json").write_text(json.dumps(entries[1:], ensure_ascii=False), encoding="utf-8")
+        (gdir / "guides" / "test" / "moonlight.md").write_text(
+            "# Moonlight Herb\n\n## Where to get\n"
+            "Moonlight Herbs grow near the river at night. Bring a basket.\n\n"
+            "## Moonlight Potion\nUse 2 Moonlight Herbs in an Alchemy Pot.\n",
+            encoding="utf-8",
+        )
+        previous = kb_bridge.current_output_root()
+        try:
+            kb_bridge.set_output_root(root)
+            r = kb_bridge.retrieve(game, "月光草怎么获得？")
+            check("新游戏命中结构化条目", bool(r.entries) and "月光草" in r.entries[0]["entry"].get("name", ""))
+            check("动态术语桥命中英文攻略", any("moonlight.md" in g["file"] for g in r.guides))
+            check("新游戏上下文可引用", "Moonlight Herbs grow near the river" in r.context())
+        finally:
+            kb_bridge.set_output_root(previous)
 
 
 def test_prompt():
@@ -158,6 +226,7 @@ def main() -> int:
     test_config()
     test_hotkey()
     test_retrieval()
+    test_multi_game()
     test_prompt()
     test_markdown()
     if not args.skip_llm:

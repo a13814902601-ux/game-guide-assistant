@@ -47,7 +47,7 @@
 | ① 源探测 | 先看每个源有没有货，不盲抓 | 源状态报告 JSON |
 | ② 分源采集 | Steam / Wikily / 游民自动抓；手动源放 `guides/` | `output/<game>/guides/` |
 | ③ 结构化抽取 | 按六类补齐前置/步骤/注意事项/来源 | `output/<game>/data/*.json` |
-| ④ 查询层 | 结构化优先、全文兜底、术语桥 | `kb/query.py` |
+| ④ 查询层 | 结构化优先、全文兜底、按数据自动生成中英术语桥 | `kb/query.py` |
 | ⑤ 装机验证 | MCP 冒烟 + 四问 + 反例 + 驾驶员验收 | 可问答的知识库 |
 
 一条新游戏的端到端命令：
@@ -198,6 +198,7 @@ skills/game-kb-builder/   →  %USERPROFILE%\.zcode\skills\game-kb-builder\
 # 按探测报告写 games/<slug>.json
 .venv\Scripts\python scripts\build_kb.py --game <slug>
 # 按 output/<slug>/data/*.json 规范补结构化条目
+# 每条尽量带 name（中文名）+ name_en（英文名）：查询层会自动生成中英术语桥
 .venv\Scripts\python scripts\test_mcp_smoke.py
 ```
 

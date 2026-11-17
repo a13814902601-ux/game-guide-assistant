@@ -38,7 +38,7 @@ def list_games() -> str:
 
 @mcp.tool
 def search_data(game: str, keyword: str, category: str | None = None) -> str:
-    """在结构化攻略数据中按关键词检索（中英文自动桥接，如 通缉犯↔Wanted）。
+    """在结构化攻略数据中按关键词检索（按当前游戏 name/name_en 自动中英桥接，通用词如 通缉犯↔Wanted 另有兜底）。
 
     category 可选：quests(任务/委托/事件/结局)、items(道具获取)、bosses(危机/强敌/治安)、
     achievements(成就)、recipes(配方)、characters(角色/通缉犯/NPC)；不传则全部分类。
@@ -64,7 +64,7 @@ def get_entry(game: str, category: str, name: str) -> str:
 
 @mcp.tool
 def search_guides(game: str, keyword: str) -> str:
-    """全文检索攻略库（62+ 篇攻略/wiki），返回命中文件与行预览。"""
+    """全文检索攻略库，返回命中文件与行预览。关键词会用当前游戏的 name/name_en 自动做中英桥接；中文没命中时可换英文名再搜一次。"""
     try:
         return json.dumps(q.search_guides(game, keyword), ensure_ascii=False)
     except Exception as exc:  # noqa: BLE001

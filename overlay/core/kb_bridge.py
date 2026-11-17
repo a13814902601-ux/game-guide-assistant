@@ -22,15 +22,17 @@ if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 from kb import query as kbq  # noqa: E402
-from kb.glossary import PAIRS  # noqa: E402
+from kb.glossary import PAIRS, expand as expand_term, game_pairs  # noqa: E402
 
 CATEGORIES = ("quests", "items", "bosses", "achievements", "recipes", "characters")
 MIN_ENTRY_SCORE = 4.0
 MAX_ENTRIES = 10
-MAX_GUIDES = 3
+MAX_GUIDES = 7
 MAX_ENTRY_CHARS = 1500
-MAX_EXCERPT_CHARS = 2600
-MAX_CONTEXT_CHARS = 18000
+MAX_EXCERPT_CHARS = 8000
+MAX_CONTEXT_CHARS = 70000
+FULL_GUIDE_CHARS = 8000  # 短篇攻略直接给全文，避免只摘到开头
+MAX_GUIDE_WINDOWS = 3    # 长篇攻略按命中行最多取 3 段窗口
 
 STOP_PHRASES = sorted(
     [
@@ -38,6 +40,7 @@ STOP_PHRASES = sorted(
         "告诉我", "我想知道", "想知道", "麻烦问",
         "游戏里面", "游戏里的", "游戏中的", "游戏里", "这个游戏", "本游戏",
         "怎么样", "怎么办", "怎么玩", "怎么获得", "怎么获取", "怎么拿", "怎么解锁",
+        "获得", "获取", "拿到", "弄到", "买到",
         "怎么", "怎样", "如何", "在哪里", "在哪儿", "在哪", "哪里",
         "哪几个", "哪一个", "哪种", "哪个", "哪些",
         "有多少个", "有多少", "有几个", "有哪几个", "有什么", "都有什么", "都有哪些",
@@ -56,6 +59,7 @@ STOP_GRAMS = {
     "这个", "那个", "可以", "需要", "一个", "一下", "告诉", "帮我", "请问",
     "现在", "然后", "还是", "就是", "不是", "有没有", "什么样", "怎么办",
     "怎样", "哪里", "在哪", "为什么", "东西", "时候",
+    "获得", "获取", "拿到", "弄到", "买到",
 }
 
 LIST_WORDS = ("几个", "哪些", "哪几个", "全部", "所有", "名单", "一览", "都有", "多少", "一共", "总共", "几种")
@@ -69,6 +73,13 @@ CATEGORY_HINTS = (
     ("bosses", ("危机", "强敌", "boss", "治安部", "敌人")),
     ("items", ("道具", "物品", "item")),
 )
+
+GENERIC_GUIDE_TERMS = {
+    "配方", "recipe", "制作", "crafting", "成就", "achievement",
+    "任务", "quest", "结局", "ending", "道具", "item", "物品",
+    "角色", "character", "人物", "npc", "危机", "boss", "事件", "event",
+    "一共", "总共", "全部", "所有", "多少", "几个", "哪些",
+}
 
 CATEGORY_LABELS = {
     "quests": "任务/委托/事件",
@@ -114,13 +125,16 @@ def is_list_question(question: str) -> bool:
     return any(word in question for word in LIST_WORDS)
 
 
-def candidate_terms(question: str) -> list[tuple[str, float]]:
+def candidate_terms(question: str, extra_pairs: list[tuple[str, str]] | None = None) -> list[tuple[str, float]]:
     """返回 (候选词, 权重)，权重越高越可信。"""
     norm = normalize(question)
     if not norm:
         return []
     core = strip_question_words(norm)
     weighted: dict[str, float] = {}
+    pairs = list(PAIRS)
+    if extra_pairs:
+        pairs.extend(extra_pairs)
 
     def add(term: str, weight: float) -> None:
         term = term.strip()
@@ -128,9 +142,9 @@ def candidate_terms(question: str) -> list[tuple[str, float]]:
             return
         weighted[term] = max(weighted.get(term, 0.0), weight)
 
-    # 1) 术语表命中（最可信）
+    # 1) 术语表命中（最可信；静态表 + 当前游戏 data 里的双语名）
     low = norm.lower()
-    for zh, en in PAIRS:
+    for zh, en in pairs:
         if zh in norm:
             add(zh, 3.0)
             if len(en) >= 4 and en.lower() not in low:
@@ -206,11 +220,39 @@ def _render_entry(category: str, entry: dict, index: int) -> str:
     return text
 
 
-def _excerpt(text: str, line_no: int, max_chars: int = MAX_EXCERPT_CHARS) -> str:
+def _term_variants(term: str, extra_pairs: list[tuple[str, str]] | None = None) -> list[str]:
+    """关键词 + 术语表展开（含中英双向与同义中文别名），用于字面校验与标题加权。"""
+    variants = list(expand_term(term, extra_pairs))
+    english = {v.lower() for v in variants if v.isascii()}
+    pairs = list(PAIRS)
+    if extra_pairs:
+        pairs.extend(extra_pairs)
+    if english:
+        for zh, en in pairs:
+            if en.lower() in english:
+                variants.append(zh)
+    return list(dict.fromkeys(variants))
+
+
+def _excerpt(text: str, line_nos: int | list[int], max_chars: int = MAX_EXCERPT_CHARS) -> str:
+    """短篇直接给全文；长篇按命中行取多段窗口，避免只读到开头。"""
+    if len(text) <= FULL_GUIDE_CHARS:
+        return text
     lines = text.splitlines()
-    start = max(0, line_no - 1 - 12)
-    end = min(len(lines), line_no - 1 + 60)
-    chunk = "\n".join(lines[start:end])
+    numbers = line_nos if isinstance(line_nos, list) else [line_nos]
+    spans: list[tuple[int, int]] = []
+    for line_no in numbers[:MAX_GUIDE_WINDOWS]:
+        start = max(0, int(line_no) - 1 - 12)
+        end = min(len(lines), int(line_no) - 1 + 45)
+        if start < end:
+            spans.append((start, end))
+    merged: list[tuple[int, int]] = []
+    for start, end in sorted(spans):
+        if merged and start <= merged[-1][1]:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], end))
+        else:
+            merged.append((start, end))
+    chunk = "\n…\n".join("\n".join(lines[start:end]) for start, end in merged)
     if len(chunk) > max_chars:
         chunk = chunk[:max_chars] + "\n…（摘录已截断）"
     return chunk
@@ -327,9 +369,12 @@ def _search_entries(game: str, terms: list[tuple[str, float]], preferred: str | 
     ranked = sorted(scores.items(), key=lambda kv: -kv[1])
     results = []
     for key, score in ranked:
-        if score < MIN_ENTRY_SCORE:
-            continue
         category, entry = store[key]
+        name = f"{entry.get('name', '')} {entry.get('name_en', '')}".lower()
+        # 名称命中视为强相关：不再被 MIN_ENTRY_SCORE 拦掉
+        name_hit = any(term.lower() in name for term, weight in terms if weight >= 2.0 and len(term) >= 2)
+        if score < MIN_ENTRY_SCORE and not name_hit:
+            continue
         results.append({"category": category, "entry": entry, "score": score})
         if len(results) >= MAX_ENTRIES:
             break
@@ -342,47 +387,109 @@ def _name_relevant(item: dict, terms: list[tuple[str, float]]) -> bool:
     return any(term.lower() in name for term, weight in terms if weight >= 2.0 and len(term) >= 2)
 
 
-def _search_guides(game: str, terms: list[tuple[str, float]]) -> list[dict]:
+def _match_lines(content: str, variants: list[str], exact: str) -> tuple[list[int], float]:
+    """在全文里挑出最相关的行：章节标题优先，原词命中次之。"""
+    exact_low = exact.lower()
+    scored: list[tuple[float, int]] = []
+    for idx, line in enumerate(content.splitlines(), 1):
+        low = line.lower()
+        if not any(v in low for v in variants):
+            continue
+        text = line.strip()
+        heading = bool(re.match(r"^(#+|[一二三四五六七八九十百]+、|\d+[.、])", text))
+        quality = 2.0 if heading else 0.0
+        if exact_low and exact_low in low:
+            quality += min(2.0, 0.6 * low.count(exact_low))
+        scored.append((quality, idx))
+    if not scored:
+        return [], 0.0
+    scored.sort(key=lambda item: (-item[0], item[1]))
+    chosen = [idx for _, idx in scored[:MAX_GUIDE_WINDOWS]]
+    return chosen, min(4.0, sum(quality for quality, _ in scored[:3]))
+
+
+def _search_guides(
+    game: str,
+    terms: list[tuple[str, float]],
+    exclude: set[str] | None = None,
+    pairs: list[tuple[str, str]] | None = None,
+) -> list[dict]:
     strong = [(t, w) for t, w in terms if w >= 2.0 and len(t) >= 2]
+    # 「熔炉配方」这类问题里，「配方/recipe」只是分类词，会用所有带 Recipe 标题的
+    # 物品页把真正的熔炉页挤掉；有具体名词时只按具体名词搜。
+    # 如果整句只剩下分类词（「一共有多少个成就」），退回原词表，别用「一共」去搜。
+    specific = [(t, w) for t, w in strong if t.lower() not in GENERIC_GUIDE_TERMS]
+    if specific:
+        strong = specific
     if not strong:
         return []
     merged: dict[str, dict] = {}
-    for term, weight in strong[:4]:
+    text_cache: dict[str, str] = {}
+    for term, weight in strong[:5]:
         try:
-            hits = kbq.search_guides(game, term, limit=6)
+            # 候选放宽到 30：中文长文里主题词可能排得靠后，不能只看前 8
+            hits = kbq.search_guides(game, term, limit=30)
         except (FileNotFoundError, ValueError):
             return []
+        variants = [v.lower() for v in _term_variants(term, pairs) if v]
         for rank, hit in enumerate(hits):
             file = hit["file"]
-            haystack = (hit.get("title", "") + "\n" + "\n".join(hit.get("matches", []))).lower()
-            if term.lower() not in haystack:
+            if exclude and file in exclude:
                 continue
-            score = weight * (1.0 + 1.0 / (rank + 1))
+            haystack = (hit.get("title", "") + "\n" + "\n".join(hit.get("matches", []))).lower()
+            if not any(v in haystack for v in variants):
+                continue
+            if file not in text_cache:
+                data = kbq.get_guide(game, file)
+                if not data:
+                    continue
+                text_cache[file] = data["content"]
+            lines, quality = _match_lines(text_cache[file], variants, term)
+            if not lines:
+                continue
+            score = weight * (1.0 + 1.0 / (rank + 1)) + quality
+            title = hit.get("title", file)
+            title_low = title.lower()
+            if any(v == title_low for v in variants):       # 专题页标题精确命中
+                score *= 2.0
+            elif any(v in title_low for v in variants):     # 标题包含关键词
+                score *= 1.3
             if file in merged:
                 merged[file]["score"] += score
+                merged[file]["lines"] = list(dict.fromkeys(merged[file]["lines"] + lines))[:MAX_GUIDE_WINDOWS]
             else:
-                merged[file] = {"file": file, "title": hit.get("title", file), "score": score, "line": None}
-                for line in hit.get("matches", []):
-                    m = re.match(r"L(\d+):", line)
-                    if m:
-                        merged[file]["line"] = int(m.group(1))
-                        break
+                merged[file] = {
+                    "file": file,
+                    "title": title,
+                    "score": score,
+                    "lines": lines,
+                }
     ranked = sorted(merged.values(), key=lambda item: -item["score"])[:MAX_GUIDES]
     guides = []
     for item in ranked:
-        data = kbq.get_guide(game, item["file"])
-        if not data:
-            continue
-        line_no = item.get("line") or 1
+        content = text_cache.get(item["file"])
+        if content is None:
+            data = kbq.get_guide(game, item["file"])
+            if not data:
+                continue
+            content = data["content"]
         guides.append(
             {
                 "file": item["file"],
                 "title": item["title"],
                 "score": item["score"],
-                "excerpt": _excerpt(data["content"], line_no),
+                "excerpt": _excerpt(content, item.get("lines") or [1]),
             }
         )
     return guides
+
+
+def _merge_guides(primary: list[dict], extra: list[dict]) -> list[dict]:
+    by_file = {guide["file"]: guide for guide in primary}
+    for guide in extra:
+        if guide["file"] not in by_file or guide["score"] > by_file[guide["file"]]["score"]:
+            by_file[guide["file"]] = guide
+    return sorted(by_file.values(), key=lambda guide: -guide["score"])[:MAX_GUIDES]
 
 
 def _category_index(game: str, category: str) -> dict:
@@ -449,7 +556,11 @@ def games() -> list[dict]:
 
 
 def retrieve(game: str, question: str, last_question: str | None = None) -> Retrieval:
-    terms = candidate_terms(question)
+    try:
+        pairs = game_pairs(kbq._game_dir(game))
+    except (FileNotFoundError, ValueError):
+        pairs = []
+    terms = candidate_terms(question, pairs)
     intent = detect_intent_category(question)
     list_q = is_list_question(question)
     result = Retrieval(
@@ -475,20 +586,36 @@ def retrieve(game: str, question: str, last_question: str | None = None) -> Retr
             result.entries = preferred_entries
     # 指代型追问（「那第二个呢」）单独检索为空时，带上上一轮问题再试一次
     if not result.entries and last_question and last_question != question:
-        extra_terms = candidate_terms(f"{last_question} {question}")
+        extra_terms = candidate_terms(f"{last_question} {question}", pairs)
         result.entries = _search_entries(game, extra_terms, preferred=intent)
         if result.entries:
             result.terms = extra_terms
-    result.guides = _search_guides(game, result.terms)
+    result.guides = _search_guides(game, result.terms, pairs=pairs)
+    # 二轮检索：用结构化条目里的英文名再搜全文。
+    # 中文别名未必出现在攻略正文里（如「花莓」→ BloomBerry），这一步补上这条线索。
+    if len(result.guides) < MAX_GUIDES and result.entries:
+        name_terms: list[tuple[str, float]] = []
+        for item in result.entries[:5]:
+            name_en = str(item["entry"].get("name_en") or "").strip()
+            if len(name_en) >= 4 and any(ch.isalpha() for ch in name_en):
+                name_terms.append((name_en, 2.4))
+        if name_terms:
+            extra_guides = _search_guides(
+                game,
+                name_terms,
+                exclude={guide["file"] for guide in result.guides},
+                pairs=pairs,
+            )
+            result.guides = _merge_guides(result.guides, extra_guides)
     # 没有分类意图、条目名也不含强关键词时，结构化命中多半是正文噪音（如「存档」），
     # 有全文攻略就只给攻略，避免 LLM 拿无关条目硬答。
     if result.entries and result.guides and not intent:
         if not any(_name_relevant(item, result.terms) for item in result.entries[:3]):
             result.entries = []
     if result.empty and last_question and last_question != question:
-        extra_terms = candidate_terms(f"{last_question} {question}")
+        extra_terms = candidate_terms(f"{last_question} {question}", pairs)
         result.entries = _search_entries(game, extra_terms, preferred=intent)
-        result.guides = _search_guides(game, extra_terms)
+        result.guides = _search_guides(game, extra_terms, pairs=pairs)
         if not result.empty:
             result.terms = extra_terms
     return result
@@ -514,20 +641,26 @@ def refusal_text(question: str, game_name: str) -> str:
         f"没有在《{game_name}》攻略库里找到和「{question}」直接相关的内容，"
         f"所以我不能凭记忆编答案。\n\n"
         "**可以试试**\n"
-        "- 换个关键词：通缉犯、水商、成就、配方、存档、房租\n"
-        "- 或者先问「新手怎么开荒」，再顺着问具体任务\n\n"
+        "- 换成游戏里实际显示的名字（中文或英文都行）\n"
+        "- 问得更具体：某样物品怎么获得、某台机器怎么用、某个任务怎么选\n"
+        "- 或者先问「新手怎么开局」，再顺着追问\n\n"
         "**来源**：本地知识库（未命中）"
     )
 
 
 def suggested_questions(game: str) -> list[str]:
-    """空态示例问题，按知识库实际内容给。"""
+    """空态示例问题，按当前游戏实际收录的分类给。"""
     stats = _load_stats(game)
     name = stats.get("name_zh") or "这个游戏"
-    return [
-        "通缉犯有哪几个？",
-        "水商怎么玩？",
-        "一共有多少个成就？",
-        "熔炉配方有哪些？",
-        f"{name}新手怎么开荒？",
-    ][:4]
+    categories = (stats.get("data") or {}).get("categories") or {}
+    pool: list[str] = []
+    if categories.get("quests"):
+        pool.append("主线任务有哪些？")
+    if categories.get("recipes"):
+        pool.append("配方有哪些？")
+    if categories.get("achievements"):
+        pool.append("成就一共有多少个？")
+    if categories.get("characters"):
+        pool.append("角色/通缉犯有哪些？")
+    pool.append(f"{name}新手怎么开局？")
+    return pool[:4]
