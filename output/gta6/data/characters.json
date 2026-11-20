@@ -1,0 +1,239 @@
+[
+  {
+    "id": "char-jason-duval",
+    "name": "杰森·杜瓦尔",
+    "name_en": "Jason Duval",
+    "category": "characters",
+    "prerequisites": [
+      "双主角之一，全程可操作"
+    ],
+    "steps": [
+      "身份：主角，退伍军人（ex-Army），为毒品跑腿人工作",
+      "背景：从小混迹于骗子和罪犯之间；参军试图摆脱混乱的青少年时期",
+      "现状：住在基斯群岛（Keys），为当地毒品运输线跑腿",
+      "住处：免费住在布莱恩·海德的房产里，条件是帮忙做本地收债/威吓工作",
+      "与露西娅两年前因偷车意外结缘，一次争吵后不欢而散，故事开始时重逢"
+    ],
+    "cautions": [
+      "杰森与露西娅可随时切换操作",
+      "剧情中杰森负责较多抢劫执行与偷车环节"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-lucia-caminos",
+    "name": "露西娅·卡米诺斯",
+    "name_en": "Lucia Caminos",
+    "category": "characters",
+    "prerequisites": [
+      "双主角之一，第一章【回家】任务出狱后入队"
+    ],
+    "steps": [
+      "身份：主角，刚出狱（Leonida 州监狱），有自己的计划",
+      "背景：父亲从她能走路起就教她打架；为家庭而斗最终进了 Leonida 监狱",
+      "现状：运气让她出狱，想过上母亲自自由城时代就梦想的好日子",
+      "与杰森的生活可能是她的出路",
+      "出狱任务【回家】：先去接露西娅，最好不要拖延；可选目标给她带些衣服"
+    ],
+    "cautions": [
+      "接露西娅前修好车可获恋爱等级加成（一颗爱心）",
+      "弄丢给露西娅带的衣服可能要回滚约3小时进度（B站玩家实测教训）"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-cal-hampton",
+    "name": "卡尔·汉普顿",
+    "name_en": "Cal Hampton",
+    "category": "characters",
+    "prerequisites": [
+      "第一章任务登场"
+    ],
+    "steps": [
+      "身份：杰森的朋友，喜欢监听海岸警卫队无线电",
+      "相关任务：【垂钓】（和卡尔开船，毒品运送）、【避人耳目】（和卡尔偷车）"
+    ],
+    "cautions": [
+      "中文名『卡尔』为通用译名"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-brian-heder",
+    "name": "布莱恩·海德",
+    "name_en": "Brian Heder",
+    "category": "characters",
+    "prerequisites": [
+      "第一章主线人物（杰森房东）"
+    ],
+    "steps": [
+      "身份：杰森的房东与上线",
+      "杰森免费住他的房产，条件是帮忙做本地威吓工作",
+      "相关任务：【作坊费用】（替布莱恩收租）、【嘿阿诺德】（追查布莱恩失踪的联系人阿诺德）"
+    ],
+    "cautions": [
+      "中文名沿用游民 roadbook 的『布莱恩』"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-donnie",
+    "name": "唐尼",
+    "name_en": "Donnie",
+    "category": "characters",
+    "prerequisites": [
+      "第一章登场"
+    ],
+    "steps": [
+      "身份：杰森在【垂钓】（Gone Fishing）毒品运送任务中的同伴",
+      "任务目标：帮唐尼从货里抽砖（截留部分毒品）",
+      "后续：唐尼会主动打电话解锁【翠鸟帮渔棚】抢劫"
+    ],
+    "cautions": [
+      "中文名为通用译名"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-raul-bautista",
+    "name": "劳尔·鲍蒂斯塔",
+    "name_en": "Raul Bautista",
+    "category": "characters",
+    "prerequisites": [
+      "第三章任务【信用审查（与劳尔的团队会面）】登场"
+    ],
+    "steps": [
+      "身份：主角圈核心人物之一（wikily 名单）",
+      "完成【信用审查】后解锁染料包干扰器与全部22处银行差事"
+    ],
+    "cautions": [
+      "中文名为通用译名"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-boobie-ike",
+    "name": "布比·艾克",
+    "name_en": "Boobie Ike",
+    "category": "characters",
+    "prerequisites": [
+      "主角圈核心人物（wikily 名单）"
+    ],
+    "steps": [
+      "身份：主角圈核心人物之一",
+      "与 Dre'Quan Priest、Real Dimez 组合相关联"
+    ],
+    "cautions": [
+      "详细剧情内容随游戏更新补充；中文名为音译"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-drequan-priest",
+    "name": "德奎恩·普里斯特",
+    "name_en": "Dre'Quan Priest",
+    "category": "characters",
+    "prerequisites": [
+      "主角圈核心人物（wikily 名单）"
+    ],
+    "steps": [
+      "身份：主角圈核心人物之一，与 Real Dimez 组合相关联"
+    ],
+    "cautions": [
+      "详细剧情内容随游戏更新补充；中文名为音译"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-kenton-rees",
+    "name": "肯顿·里斯",
+    "name_en": "Kenton Rees",
+    "category": "characters",
+    "prerequisites": [
+      "第一章【岛屿之梦】任务登场"
+    ],
+    "steps": [
+      "身份：布莱恩的朋友",
+      "委托杰森在【岛屿之梦】任务中潜水寻宝"
+    ],
+    "cautions": [
+      "中文名为音译"
+    ],
+    "source_url": "https://wikily.gg/gta-6/characters",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-sherry",
+    "name": "雪莉",
+    "name_en": "Sherry",
+    "category": "characters",
+    "prerequisites": [
+      "推进主线到【嘿，阿诺德！】附近，杰森安全屋出现"
+    ],
+    "steps": [
+      "身份：女邻居，第一章易错过的支线人物",
+      "支线：【拿到雪莉的朗姆酒】→ 触发【奇珍动物门面】抢劫",
+      "第一章会错过的载具『麦霸子·雪莉的半影使者』与她相关"
+    ],
+    "cautions": [
+      "英文名为通用拼写（Sherry），待游戏内核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248226.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-joey",
+    "name": "乔伊",
+    "name_en": "Joey",
+    "category": "characters",
+    "prerequisites": [
+      "主线推进至【海岸汽车护理】剧情后解锁"
+    ],
+    "steps": [
+      "身份：改装店店主",
+      "解锁后手机联系乔伊可免费修车、免费送车"
+    ],
+    "cautions": [
+      "只对属于自己的车生效"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249176.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "char-mandy",
+    "name": "曼迪",
+    "name_en": "Mandy",
+    "category": "characters",
+    "prerequisites": [
+      "第一章收租任务登场"
+    ],
+    "steps": [
+      "相关任务：【管道活（收曼迪房租）】"
+    ],
+    "cautions": [
+      "中文名沿用游民 roadbook 译名"
+    ],
+    "source_url": "https://www.gamersky.com/tools/guide-map/roadbooks/55",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  }
+]

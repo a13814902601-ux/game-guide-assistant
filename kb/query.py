@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 """知识库查询核心：MCP 服务器与 CLI 共用。"""
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -72,15 +73,45 @@ def _entry_text(e: dict) -> str:
     return " ".join(parts)
 
 
+def _fallback_terms(kw: str) -> list[str]:
+    """整句无命中时的兜底分词：中文按 2 字滑窗、英文按词切。
+
+    白话问句（「怎么抢银行」）不是整串词条，靠这层兜底命中；
+    窗口取 2~3 字避免单字噪声（「怎么」的「怎」无意义）。
+    """
+    terms: list[str] = []
+    zh = re.findall(r"[\u4e00-\u9fff]+", kw)
+    en = [w for w in re.findall(r"[A-Za-z][A-Za-z'-]+", kw) if len(w) >= 3]
+    for seg in zh:
+        if len(seg) >= 3:
+            terms.append(seg)  # 整段中文优先（如「通缉等级」）
+            terms += [seg[i:i+3] for i in range(len(seg) - 2)]
+        terms += [seg[i:i+2] for i in range(max(len(seg) - 1, 0))]
+    return terms + en
+
+
 def search_data(game: str, keyword: str, category: str | None = None, limit: int = 8) -> list[dict]:
     """按关键词检索结构化数据；命中名称加权，正文命中也返回。
 
     关键词会经术语表做中英双向扩展（通缉犯→wanted），英文内容也能被中文搜到。
+    整串无命中时自动降级为滑窗分词兜底（白话问句「怎么抢银行」也能命中）。
     """
     kw = keyword.strip()
     if not kw:
         return []
-    terms = expand_terms(kw, game_pairs(_game_dir(game)))
+    gdir = _game_dir(game)
+    terms = expand_terms(kw, game_pairs(gdir))
+    hits = _score_data(gdir, terms, category, limit)
+    if hits:  # 整串/术语扩展已有命中，直接用
+        return hits
+    fb = _fallback_terms(kw)
+    if fb and fb != terms:
+        hits = _score_data(gdir, fb, category, limit)
+    return hits
+
+
+def _score_data(gdir: Path, terms: list[str], category: str | None, limit: int) -> list[dict]:
+    game = gdir.name
     cats = [category] if category else CATEGORIES
     hits = []
     for cat in cats:
@@ -118,13 +149,27 @@ def get_entry(game: str, category: str, name: str) -> dict | None:
 
 
 def search_guides(game: str, keyword: str, limit: int = 8) -> list[dict]:
-    """全文检索攻略库，返回文件+命中行。关键词经术语表做中英双向扩展。"""
+    """全文检索攻略库，返回文件+命中行。关键词经术语表做中英双向扩展。
+
+    整串无命中时降级为滑窗分词兜底（与 search_data 同款白话问句处理）。
+    """
     kw = keyword.strip()
     if not kw:
         return []
-    terms = expand_terms(kw, game_pairs(_game_dir(game)))
+    gdir = _game_dir(game)
+    terms = expand_terms(kw, game_pairs(gdir))
+    results = _score_guides(gdir, terms, limit)
+    if results:
+        return results
+    fb = _fallback_terms(kw)
+    if fb and fb != terms:
+        results = _score_guides(gdir, fb, limit)
+    return results
+
+
+def _score_guides(gdir: Path, terms: list[str], limit: int) -> list[dict]:
     results = []
-    for md in sorted(_game_dir(game).glob("guides/**/*.md")):
+    for md in sorted(gdir.glob("guides/**/*.md")):
         try:
             lines = md.read_text(encoding="utf-8", errors="ignore").splitlines()
         except OSError:
@@ -143,7 +188,7 @@ def search_guides(game: str, keyword: str, limit: int = 8) -> list[dict]:
                 if len(matched) >= 3:
                     break
         if matched:
-            rel = md.relative_to(_game_dir(game) / "guides").as_posix()
+            rel = md.relative_to(gdir / "guides").as_posix()
             results.append({"score": score, "file": rel, "title": title, "matches": matched})
     results.sort(key=lambda r: -r["score"])
     return results[:limit]

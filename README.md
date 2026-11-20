@@ -6,7 +6,7 @@
 ![悬浮窗截图](docs/screenshots/overlay.png)
 
 - **两个 Skill 双主力**：`game-kb-builder` 负责**建库**，`game-guide-qa` 负责**问答**
-- **建库管线**：源探测 → 分源采集 → 结构化 → MCP 查询 → 装机验证；公开版带 Steam/Wikily/游民自动采集器，本地完整版另有 B站登录态与小黑盒（黑盒）签名中继采集
+- **建库管线**：源探测 → 分源采集 → 结构化 → MCP 查询 → 装机验证；公开版带 Steam/Wikily/游民星空/游侠/PowerPyx 自动采集器，本地完整版另有 B站登录态与小黑盒（黑盒）签名中继采集
 - **悬浮窗**：置顶、半透明、可拖拽缩放，`F8` 全局显示/隐藏，不切屏问攻略
 - **只依据知识库回答**：按「前置条件 / 步骤 / 注意事项 / 来源」给答案；查不到就说“知识库暂未收录”，不编造
 - **来源可点击**：答案里的 http(s) 网址自动变成可点击链接
@@ -23,8 +23,8 @@
 > 规定查库顺序、答案格式、列表报数量、剧透警告和拒答规则。见
 > **[game-guide-qa 功能与实现详解](docs/skill-game-guide-qa.md)**。
 
-> **公开版说明**：本仓库包含 **135 条结构化攻略数据**、查询层、MCP 服务器、两个 Skill、
-> 悬浮窗代码，以及 **Steam / Wikily / 游民星空的公开源采集管线**；
+> **公开版说明**：本仓库包含 **246 条结构化攻略数据**（深空当铺 135 + 侠盗猎车手6 111，GTA6 含全奖杯 55 条）、查询层、MCP 服务器、两个 Skill、
+> 悬浮窗代码，以及 **Steam / Wikily / 游民星空 / 游侠 / PowerPyx 的公开源采集管线**；
 > **不包含** 696 篇第三方攻略全文、B站登录态采集器和小黑盒签名中继采集器（版权/平台条款原因）。
 > 全文需要按来源 URL 自行采集；详见 [数据说明](output/deepspace-pawnshop/README.md)。
 
@@ -45,7 +45,7 @@
 | 阶段 | 做什么 | 关键产物 |
 |---|---|---|
 | ① 源探测 | 先看每个源有没有货，不盲抓 | 源状态报告 JSON |
-| ② 分源采集 | Steam / Wikily / 游民自动抓；手动源放 `guides/` | `output/<game>/guides/` |
+| ② 分源采集 | Steam / Wikily / 游民星空 / 游侠 / PowerPyx 自动抓；手动源放 `guides/` | `output/<game>/guides/` |
 | ③ 结构化抽取 | 按六类补齐前置/步骤/注意事项/来源 | `output/<game>/data/*.json` |
 | ④ 查询层 | 结构化优先、全文兜底、按数据自动生成中英术语桥 | `kb/query.py` |
 | ⑤ 装机验证 | MCP 冒烟 + 四问 + 反例 + 驾驶员验收 | 可问答的知识库 |
@@ -56,7 +56,7 @@
 # 1. 探测
 .venv\Scripts\python.exe scripts\probe_sources.py --name "游戏名" --name-en "Game" --appid 123456
 # 2. 写 games/<slug>.json
-# 3. 自动采集（Steam/Wikily/游民）
+# 3. 自动采集（Steam/Wikily/游民星空/游侠/PowerPyx）
 .venv\Scripts\python.exe scripts\build_kb.py --game <slug>
 # 4. 按 data/*.json 规范补结构化条目
 # 5. 回归
@@ -202,14 +202,14 @@ skills/game-kb-builder/   →  %USERPROFILE%\.zcode\skills\game-kb-builder\
 .venv\Scripts\python scripts\test_mcp_smoke.py
 ```
 
-公开版自带 Steam / Wikily / 游民星空采集器；B站登录态、小黑盒签名中继不包含。
+公开版自带 Steam / Wikily / 游民星空 / 游侠 / PowerPyx 采集器；B站登录态、小黑盒签名中继不包含。
 完整流程、数据 schema、坑表和扩源方法见
 **[docs/skill-game-kb-builder.md](docs/skill-game-kb-builder.md)**。
 
 ## 架构
 
 ```
-公开攻略来源（Steam / Wikily / 游民 / 手动源）
+公开攻略来源（Steam / Wikily / 游民星空 / PowerPyx / 手动源）
                   │
     ┌─────────────┴─────────────┐
     │  game-kb-builder（建库主力） │

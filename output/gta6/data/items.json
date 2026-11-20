@@ -1,0 +1,487 @@
+[
+  {
+    "id": "item-sniper-rifle",
+    "name": "狙击步枪获取（5家扩展库存枪店）",
+    "name_en": "Sniper Rifle",
+    "category": "items",
+    "prerequisites": [
+      "只能购买：库存等级为【扩展】的特定枪店",
+      "全图共有5家此类店铺"
+    ],
+    "steps": [
+      "在地图上将光标移到枪店图标上，查看该店武器种类（有限/标准/狩猎/扩展）",
+      "前往5家拥有完整扩展库存的枪店之一",
+      "在店内购买狙击步枪（可购买的狙击步枪共有5把）",
+      "具体店铺位置见游民互动地图标注"
+    ],
+    "cautions": [
+      "非扩展级枪店没有狙击步枪，别跑错店"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249034.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-grenade-launcher-rpg",
+    "name": "榴弹发射器与火箭发射器获取（扩展型弹药国度）",
+    "name_en": "Grenade Launcher / Rocket Launcher",
+    "category": "items",
+    "prerequisites": [
+      "可在扩展型弹药国度购买",
+      "全图仅5家门店提供完整库存"
+    ],
+    "steps": [
+      "地图光标移到弹药国度门店，确认库存类型为【扩展】",
+      "前往5家扩展库存门店之一购买",
+      "共有2把榴弹发射器和1把火箭发射器可购"
+    ],
+    "cautions": [
+      "榴弹/火箭及其弹药都只在扩展库存店出售"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249048.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-military-tank",
+    "name": "军用坦克位置（马里亚纳空军基地）",
+    "name_en": "Military Tank",
+    "category": "items",
+    "prerequisites": [
+      "基地位于地图西南边缘的马里亚纳（岛屿）"
+    ],
+    "steps": [
+      "前往地图西南部马里亚纳岛空军基地，坦克停放在基地南部",
+      "直接驾车穿过大门进入；或从东南入口旁完成特技跳跃翻越围栏",
+      "坦克未上锁，直接进入驾驶"
+    ],
+    "cautions": [
+      "基地内有军事人员，进入可能引发高星通缉"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249057.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-parachute",
+    "name": "降落伞获取与启用",
+    "name_en": "Parachute",
+    "category": "items",
+    "prerequisites": [
+      "武装国度枪店有售"
+    ],
+    "steps": [
+      "前往武装国度枪店（如剧情中首次前往基伦托时进入的那家，后方左侧墙上挂伞包）",
+      "与店员交谈，在【装备】分类下找到降落伞购买",
+      "在物品轮盘里切换启用"
+    ],
+    "cautions": [
+      "跳机/跳楼前记得先在轮盘里装好伞包"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249060.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-body-armor",
+    "name": "防弹衣购买与装备",
+    "name_en": "Body Armor",
+    "category": "items",
+    "prerequisites": [
+      "武装国度枪店有售"
+    ],
+    "steps": [
+      "前往武装国度枪店（首次到基伦托那家右侧墙上就挂防弹衣）",
+      "与店员交谈，在【装备】分类下购买",
+      "通过物品轮盘开启使用"
+    ],
+    "cautions": [
+      "防弹衣是消耗品，高强度抢劫前多备几件"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249065.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-scan-sculptures",
+    "name": "雕塑扫描位置（AI爽窥扫描点·23处）",
+    "name_en": "AI Scan Sculptures",
+    "category": "items",
+    "prerequisites": [
+      "雕塑是AI爽窥扫描点5类之一",
+      "累计找到100个AI爽窥扫描点是100%完成度要求之一"
+    ],
+    "steps": [
+      "长按【十字键-下】打开AI爽窥模式",
+      "把视线焦点对准雕塑等扫描目标，出现准星标记后长按【R1】扫描",
+      "已知样例：三角雕塑 – 马里亚纳县 > 海盗礁；全部23处位置见游民互动地图",
+      "进度查看：进度菜单 > 收藏 > AI爽窥地点 > 雕塑"
+    ],
+    "cautions": [
+      "全部23处雕塑都找到可推进100%完成度",
+      "扫描点顺序按游戏内进度菜单排列，便于对照"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249038.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-ai-spy-mode",
+    "name": "AI爽窥模式用法（扫描载具/动物）",
+    "name_en": "",
+    "category": "items",
+    "prerequisites": [
+      "游戏内置的扫描观察机制（游民译名：AI爽窥）"
+    ],
+    "steps": [
+      "长按【十字键-下】进入AI爽窥模式",
+      "将视线焦点对准想扫描的车辆或其他载具，出现可扫描准星标记",
+      "长按【R1】扫描目标载具",
+      "扫描可得知载具基本信息、防盗情况、是否安装追踪器",
+      "装有警报的载具需用游戏内道具处理后再下手"
+    ],
+    "cautions": [
+      "偷车前先扫描确认有没有追踪器，避免开走后被警察定位",
+      "AI爽窥还可扫描地标、奇闻等信息；前期主要用于扫车"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249223.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-bank-jobs-22",
+    "name": "全部银行差事位置（22处：小型14+大型金库8）",
+    "name_en": "Bank Jobs Locations",
+    "category": "items",
+    "prerequisites": [
+      "小型银行在第三章主线任务【信用审查（与劳尔的团队会面）】后解锁",
+      "该任务解锁染料包干扰器，用于处理银行中被标记的钞票"
+    ],
+    "steps": [
+      "第三章完成【信用审查】后，探索地图驱散迷雾",
+      "银行会自动以绿色银行图标标记",
+      "小型银行共14处、大型银行金库共8处，合计22处",
+      "全部完成是100%完成度清单的必要条件"
+    ],
+    "cautions": [
+      "抢劫5处大型银行金库才能解锁奖杯【最大提款】",
+      "大型银行金库平时不开，只有跟踪运钞车才能抢金库"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249025.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-fence-locations",
+    "name": "销赃点机制与位置",
+    "name_en": "Fence Locations",
+    "category": "items",
+    "prerequisites": [
+      "销赃点会随剧情推进更替"
+    ],
+    "steps": [
+      "偷来的货物、珠宝店赃物可以卖给销赃点",
+      "销赃点在地图上以绿色图标标示，图标带姓名首字母",
+      "不同销赃点对各类赃物收购价不同，比价后再卖",
+      "赃物在【抢劫】地点获得（地图抢劫栏筛选）"
+    ],
+    "cautions": [
+      "可用销赃点随剧情变化：新销赃点会出现，旧的会关闭"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249042.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-racing-40",
+    "name": "竞速活动位置（40处）",
+    "name_en": "Street Races",
+    "category": "items",
+    "prerequisites": [
+      "参与需支付入场费和载具租赁费"
+    ],
+    "steps": [
+      "靠近竞速点100米（码）以内，地图会以蓝色图标标记",
+      "通过地图筛选查看已发现数量：地图 > 活动（哑铃图标）> 竞速",
+      "每个竞速位置包含2场或更多独特竞速，完成一场解锁下一场",
+      "全图共40个独特竞速活动位置",
+      "赢得20场解锁奖杯【赚钱，不赚吆喝】，赢得30场计入100%完成度"
+    ],
+    "cautions": [
+      "竞速数量比奖杯所需多10场，可挑最容易的场次完成",
+      "赢比赛后有利润，输了只付入场费"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249385.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-hidden-23-locations",
+    "name": "23个隐藏秘密地点",
+    "name_en": "23 Hidden Locations",
+    "category": "items",
+    "prerequisites": [
+      "这些地点不会出现在任何地图上"
+    ],
+    "steps": [
+      "据数据挖掘者信息，GTA6隐藏了23个不在地图标注的秘密地点",
+      "具体清单与位置见B站专栏整理"
+    ],
+    "cautions": [
+      "内容来自数据挖掘（Fable 5.2），与正式游戏可能有出入",
+      "全清单需配合原文对照"
+    ],
+    "source_url": "https://www.bilibili.com/read/cv53980015",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-autodrive",
+    "name": "自动驾驶开启方法",
+    "name_en": "Auto Drive",
+    "category": "items",
+    "prerequisites": [
+      "需先在地图上【设置目的地】"
+    ],
+    "steps": [
+      "在地图设置目的地",
+      "启动车辆，长按【十字键-下】，按Options键/菜单键打开【电影镜头】",
+      "长按【○键/B键】启用自动驾驶，车辆沿导航路线自动前往",
+      "自动驾驶期间按L2/R2调整速度，或关闭自动驾驶",
+      "到达目的地后长按【十字键-下】或直接下车退出电影镜头"
+    ],
+    "cautions": [
+      "自动驾驶只按导航路线走，会等红绿灯让车，极小概率碰撞",
+      "不建议在复杂路况下使用"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249041.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-joey-free-repair",
+    "name": "乔伊免费修车与送车",
+    "name_en": "Joey's Free Repair & Delivery",
+    "category": "items",
+    "prerequisites": [
+      "推进主线剧情并前往【海岸汽车护理】看完剧情",
+      "解锁乔伊的【改装店】并保存联系方式"
+    ],
+    "steps": [
+      "完成【小剐蹭而已】任务线后，手机联系人中获得【乔伊】",
+      "车辆损坏或离得远时，按【十字键-上】打开手机",
+      "在联系人中呼叫乔伊，免费修车并把车送到角色附近"
+    ],
+    "cautions": [
+      "只对属于自己的车生效",
+      "等油快用完还是要去加油站加油"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249176.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-vehicle-reclaim",
+    "name": "赎回被扣押车辆",
+    "name_en": "",
+    "category": "items",
+    "prerequisites": [
+      "使用个人载具期间被执法者击杀或逮捕，载具可能被扣押"
+    ],
+    "steps": [
+      "打开地图索引选择【个人】，查看当前个人载具被扣押的地点",
+      "前往扣押场偷回载具和藏货袋",
+      "在被执法者发现之前尽快离开"
+    ],
+    "cautions": [
+      "藏在后备箱的所有袋子可能丢失，也可能被锁在附近警方载具中",
+      "偷回过程会触发通缉，做好逃跑准备"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249254.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-ultimate-edition-rewards",
+    "name": "终极版奖励领取",
+    "name_en": "Ultimate Edition Rewards",
+    "category": "items",
+    "prerequisites": [
+      "购买终极版（Ultimate Edition）"
+    ],
+    "steps": [
+      "按游民攻略指引在游戏内对应菜单领取终极版奖励",
+      "具体领取位置见原文"
+    ],
+    "cautions": [
+      "奖励需手动领取，不会自动发放"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249183.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-fishing-bait",
+    "name": "钓鱼方法与鱼饵购买",
+    "name_en": "Fishing & Bait",
+    "category": "items",
+    "prerequisites": [
+      "需要有水域与钓具"
+    ],
+    "steps": [
+      "购买鱼饵（购买位置见原文）",
+      "前往水域使用钓竿钓鱼",
+      "具体操作见游民原文"
+    ],
+    "cautions": [
+      "钓鱼是放松玩法，也是属性锻炼的补充"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249212.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-vehicle-kalfordo",
+    "name": "载具偷取：卡林福多",
+    "name_en": "",
+    "category": "items",
+    "prerequisites": [
+      "游民标注为『摩西载具』系列之一"
+    ],
+    "steps": [
+      "按游民攻略指出的位置与时机偷取卡林福多",
+      "偷车前建议用AI爽窥扫描确认无追踪器"
+    ],
+    "cautions": [
+      "具体点位见原文配图"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248213.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-vehicle-aonishi",
+    "name": "载具偷取：爱尼仕恶人",
+    "name_en": "",
+    "category": "items",
+    "prerequisites": [
+      "游民标注为『摩西载具』系列之一"
+    ],
+    "steps": [
+      "按游民攻略指出的位置与时机偷取爱尼仕恶人"
+    ],
+    "cautions": [
+      "具体点位见原文配图；中文名以游民译文为准，英文名待游戏内核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248214.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-vehicle-bifu",
+    "name": "载具偷取：毕福匪徒",
+    "name_en": "",
+    "category": "items",
+    "prerequisites": [
+      "游民标注为『摩西载具』系列之一"
+    ],
+    "steps": [
+      "按游民攻略指出的位置与时机偷取毕福匪徒"
+    ],
+    "cautions": [
+      "具体点位见原文配图；英文名待游戏内核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248215.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-vehicle-wamoshi",
+    "name": "载具偷取：绝致瓦魔狮",
+    "name_en": "",
+    "category": "items",
+    "prerequisites": [
+      "游民标注为『摩西载具』系列之一"
+    ],
+    "steps": [
+      "按游民攻略指出的位置与时机偷取绝致瓦魔狮"
+    ],
+    "cautions": [
+      "具体点位见原文配图；英文名待游戏内核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248216.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-attributes-upgrade",
+    "name": "角色属性提升（力量/心肺/专注）",
+    "name_en": "Character Attributes",
+    "category": "items",
+    "prerequisites": [
+      "杰森与露西娅各有3项属性"
+    ],
+    "steps": [
+      "属性一览：力量/生命值（粉色心形）、心肺/耐力（绿色闪电）、专注（紫色眼睛）",
+      "在【杰森与露西娅】菜单选择角色，向下滚动个人资料查看属性",
+      "通过锻炼提升力量，有氧运动提升心肺，靶场挑战提升专注",
+      "具体提升速率与上限见原文"
+    ],
+    "cautions": [
+      "属性影响战斗与生存能力，建议开荒期均衡提升"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249054.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-fitness-system",
+    "name": "健身系统详解（力量/心肺/专注练法）",
+    "name_en": "Fitness System",
+    "category": "items",
+    "prerequisites": [
+      "三维属性：力量/心肺/专注",
+      "训练前要吃饱睡好"
+    ],
+    "steps": [
+      "必须练到当天涨不动为止，中途停止容易作废（进度不保）",
+      "约每练满 +1/3 圈，四档（露西娅后期可五档），理论约 12 天拉满后要维持",
+      "力量：硬举/深蹲最省时；安全屋甲板可免费练",
+      "心肺：打沙袋最快",
+      "专注：投篮、喂宠物、对猫狗示好、冥想等",
+      "练后吃蛋白加速冷却；注意提升属性 ≠ 回满体力条"
+    ],
+    "cautions": [
+      "杰森前期优先补心肺和专注",
+      "中途停练会作废是本作健身最大坑"
+    ],
+    "source_url": "https://www.xiaoheihe.cn/app/bbs/link/197281462",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "item-cheats-index",
+    "name": "全部61个秘籍/作弊码机制总览",
+    "name_en": "Cheat Codes",
+    "category": "items",
+    "prerequisites": [
+      "绝大多数秘籍需要通关主线后才解锁，且每项还要满足对应的挑战条件",
+      "作弊列表入口在进度菜单下（主线流程中不出现）"
+    ],
+    "steps": [
+      "输入方式与 GTA5 一脉相承：按方向上键掏出手机，按住相应按键调出拨号",
+      "全部秘籍必须用十字键（D-Pad）输入",
+      "分类：玩家能力（10 个）、作战（11 个）、载具召唤（21 个）、环境变化（3 个）、画面滤镜（16 个），共 61 个",
+      "样例：25万美元秘籍「立即获得 $250,000」指令为 上、右、下、左、上、左、下、右（解锁条件：通关主线剧情）",
+      "完整 61 个秘籍逐条列表见来源（Insider Gaming/PowerPyx 整理，部分输入仍在挖掘中）"
+    ],
+    "cautions": [
+      "输入任意作弊码后，当前游戏会话内无法解锁奖杯与成就，也无法保存游戏进度",
+      "限制仅在本次游玩过程中生效，重启会话后解除",
+      "逐条秘籍清单建议配合全文检索「秘籍」获取小黑盒三篇完整列表"
+    ],
+    "source_url": "https://www.xiaoheihe.cn/app/bbs/link/197235034",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  }
+]

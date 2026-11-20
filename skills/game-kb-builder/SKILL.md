@@ -8,8 +8,8 @@ description: "给一个游戏搭建攻略知识库（源探测→分源采集→
 把任意游戏的公开攻略变成可问答的本地知识库。
 命令都在仓库根目录执行，使用项目 `.venv`（Python 3.11）。
 
-> **公开版范围**：本技能包含通用的五阶段流程、Steam / Wikily / 游民星空自动采集管线、
-> 结构化规范和质量门槛。B站登录态、小黑盒签名中继等平台特定采集器**不在公开版**，
+> **公开版范围**：本技能包含通用的五阶段流程、Steam / Wikily / 游民星空 / 游侠 / PowerPyx
+> 自动采集管线、结构化规范和质量门槛。B站登录态、小黑盒签名中继等平台特定采集器**不在公开版**，
 > 需要自行实现并遵守对应平台条款；详见 `scrapers/README.md`。
 
 ## 阶段 1 · 源探测（先看清哪里有货，别盲抓）
@@ -26,13 +26,16 @@ description: "给一个游戏搭建攻略知识库（源探测→分源采集→
 |---|---|---|---|
 | Steam 社区指南 | appid → 指南中心 | 中文叙事、成就、机制 | ✅ 自动管线 |
 | Wikily.gg | slug → 顶层页 + 二级页 | 结构化数据、角色/剧情详情 | ✅ 自动管线 |
-| 游民星空 | 专区 URL | 中文短攻略、NPC/结局/机制 | ✅ 自动管线 |
+| 游民星空 | 专区攻略 tab 页 `z/<slug>/<tab_id>/` | 中文短攻略、任务流程 | ✅ 自动管线（GTA6 实测 58 篇；别跟游侠网 ali213 混淆，两家不同站） |
+| PowerPyx | 攻略枢纽页 `powerpyx.com/<slug>/` | 英文任务通关+100%清单+全收集+奖杯指南 | ✅ 自动管线（GTA6 实测 208 篇；robots 常全站 Allow） |
+| 3DM | 游戏页 | 中文攻略 | ❌ 封锁脚本访问（SSL 断连），要走浏览器渲染 |
 | B站专栏/字幕 | 浏览器渲染 | 量大质优、视频攻略 | ⚠️ 手动，公开版不含登录态采集器 |
 | biligame | 搜游戏名 | 有 wiki 时可用 | 探测即可 |
 | 社区自建 wiki | B站视频简介等 | 少数游戏有价值 | 视情况手动 |
 | 小黑盒 | 公开分享页 | 社区攻略 | ⚠️ 手动，公开版不含签名中继采集器 |
 
 探测结论写进 `games/<slug>.json` 的 `sources`，记录哪些源可用、哪些跳过、为什么。
+**开荒期提醒**（GTA6 实测）：游戏刚发售时源结构与成熟期完全不同——主机首发没有 Steam 页（`steam_appid` 写 `null`）、老站专题可能停在预告期、奖杯全量清单全网还没有。sources 里如实登记各源状态，随时间增量补采（重跑 `build_kb.py`，缓存去重）。
 
 ## 阶段 2 · 采集
 
@@ -48,10 +51,14 @@ description: "给一个游戏搭建攻略知识库（源探测→分源采集→
   "steam_appid": 123456,
   "wikily_slug": "your-game",
   "ali213_zone": "https://gl.ali213.net/z/xxxxx",
+  "gamersky_tab": "https://www.gamersky.com/z/<slug>/<tab_id>/",
+  "powerpyx_hub": "https://www.powerpyx.com/<slug>/",
   "sources": [
     {"id": "steam", "pipeline": true},
     {"id": "wikily", "pipeline": true},
-    {"id": "ali213", "pipeline": true}
+    {"id": "ali213", "pipeline": true},
+    {"id": "gamersky", "pipeline": true},
+    {"id": "powerpyx", "pipeline": true}
   ]
 }
 ```
@@ -70,10 +77,25 @@ description: "给一个游戏搭建攻略知识库（源探测→分源采集→
 output/your-game/
   guides/steam/        # Steam 中文指南
   guides/wikily/       # Wikily 页面（含二级详情页）
-  guides/ali213/       # 游民文章
+  guides/ali213/       # 游侠网文章
+  guides/gamersky/     # 游民星空真攻略（标题预筛后）
+  guides/powerpyx/     # PowerPyx 英文攻略（任务/收集/奖杯）
   _index.json          # 源状态、数量、抓取时间
   README.md            # 数据说明
 ```
+
+### 游民星空采集要点（`scrapers/gamersky.py`）
+
+- 入口是专区页的「攻略」标签完整 URL（形如 `z/gta6/390549_33233/`）；文章正文容器 `.Mid2L_con`
+- **标题预筛**：KEEP 正则（攻略|方法|位置|流程|指南|汇总|大全|作弊码…）命中才收，SKIP 正则（预告|解析|评测|爆料|盘点…）一律跳——发售期混着大量新闻，宁缺毋滥
+- 尾部噪音截断：`全收集互动地图 / 更多相关内容请关注 / 责任编辑： / 相关阅读` 等；JS 分页残渣「第N页： 展开」要清
+- 全任务 roadbook 大页（`tools/guide-map/roadbooks/<id>`）静态 HTML 只含已渲染章节的任务卡片（`.reader-node-card`），分章靠 JS 动态加载——入库标注覆盖范围，后续章节用浏览器补
+
+### PowerPyx 采集要点（`scrapers/powerpyx.py`）
+
+- WordPress 站，robots 常全站 `Allow: /`；枢纽页发现文章，正文容器 `.entry-content`；尾部截断 `Filed Under / About PowerPyx / Post navigation / Next Guides / Leave a Comment`
+- **奖杯指南程序化抽取**：表格行 `<td>奖杯名<br/>描述</td>` 的 `<br/>` 是可靠分界，`colspan` 行是补充说明归上一条；抽完**核对 roadmap 声明的总数**（GTA6=55：1白金+2金+6银+46铜），再走 `translate_terms.py` 翻中文名
+- 英文站内容入库后靠结构化数据的 `name`/`name_en` 做中英桥接，中文问句可命中英文攻略页
 
 ### 手动源
 
@@ -147,6 +169,8 @@ output/your-game/
 - 加减分类要同步改 `kb/query.py` 的 `CATEGORIES` 和 `mcp_server/server.py` 的工具描述；
 - 攻略源变多后注意“同分挤压”：英文 wiki 体量大时，中文攻略可能被挤出 top-N；
   `search_guides` 已对标题行命中加权；悬浮窗还会按章节标题定位、短篇给全文；
+- **白话整句兜底**：`search_data` / `search_guides` 整串无命中时自动按 2/3 字滑窗
+  +英文分词降级重试（「怎么抢银行」修前 0 命中、修后 8 条）；传短关键词仍是最快最准的；
 - 必要时按源限流（每源 top-N）。
 
 ## 阶段 5 · 装机与验收
@@ -193,6 +217,11 @@ output/your-game/
 | 16 | 热门排序列表翻页重复/漂移 | 按条目 id 全程去重，不依赖 offset 绝对位置 |
 | 17 | 触发验证码/风控 | 立即停止，不绕过；只采公开页面 |
 | 18 | 新游戏只写中文名，中文问句搜不到英文 wiki | 建库时每条尽量保留 `name` + `name_en`；`game_pairs()` 自动生成术语桥，缺英文名这条链就断了（中文库仍可搜，跨语言不行） |
+| 19 | 白话整句查询 0 命中（「怎么抢银行」被当整串词条） | `kb/query.py` 已加滑窗分词兜底：整串无命中自动按 2/3 字滑窗+英文分词降级重试；改共享查询层必跑双游戏回归 |
+| 20 | `build_kb.py` 结尾汇总写死源名，只接部分源的游戏 KeyError | 汇总按实际 `results` 字典打印（多游戏通用化要改彻底） |
+| 21 | 翻译脚本进度日志打到 stdout，输出 JSON 带日志前缀 | 解析前剥掉第一个 `{` 之前的内容；日志应走 stderr |
+| 22 | 部分站点直接封锁脚本访问（3DM：SSL 握手 EOF，换浏览器 UA 无效） | 别浪费时间换 UA 重试，换源或走浏览器渲染，如实登记 |
+| 23 | B站 AI 字幕配额限流：player/v2 短间隔重复请求会清空 subtitle 列表（冷却约 2 分钟），配额耗尽后整会话采不动 | 每批 ≤4 视频 + 批间冷却；耗尽就登记待办换天再采，别硬试 |
 
 ## 复用资产
 
@@ -201,13 +230,15 @@ output/your-game/
 | `scrapers/base.py` | Fetcher：缓存/限速/UA/robots |
 | `scrapers/steam_guide.py` | Steam 指南发现 + 正文 + 语言判定 |
 | `scrapers/wikily.py` | Wikily 顶层 + 二级页 + 分页 |
-| `scrapers/ali213.py` | 游民专区 + 正文截断 |
+| `scrapers/ali213.py` | 游侠网专区 + 正文截断 |
+| `scrapers/gamersky.py` | 游民星空：攻略 tab 发现 + 标题预筛 + 正文 + roadbook 任务卡片 |
+| `scrapers/powerpyx.py` | PowerPyx：枢纽页发现 + WordPress 正文（奖杯表格用 bs4 解析） |
 | `scripts/probe_sources.py` | 新游戏源探测 |
 | `scripts/build_kb.py` | 建库入口（读 `games/*.json`） |
 | `scripts/build_data.py` | wiki 表格 → `recipes.json`（示例，按游戏适配） |
 | `scripts/translate_terms.py` | 批量术语翻译 |
 | `scripts/test_mcp_smoke.py` | MCP 冒烟回归 |
-| `kb/query.py` / `kb/glossary.py` | 查询核心 + 术语桥 |
+| `kb/query.py` / `kb/glossary.py` | 查询核心 + 术语桥 + 白话整句兜底 |
 | `mcp_server/server.py` | MCP 工具层 |
 
 ## 新游戏端到端示例

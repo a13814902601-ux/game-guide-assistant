@@ -1,0 +1,1044 @@
+[
+  {
+    "id": "achievement-race-trophy",
+    "name": "赚钱，不赚吆喝（竞速奖杯）",
+    "name_en": "",
+    "category": "achievements",
+    "prerequisites": [
+      "参与竞速活动需支付入场费和载具租赁费"
+    ],
+    "steps": [
+      "全图共40个独特竞速活动位置",
+      "累计赢得20场竞速即可解锁该奖杯"
+    ],
+    "cautions": [
+      "竞速数量比奖杯所需多10场，可挑最容易的场次完成",
+      "中文名为游民译文，官方中文名待核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249385.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-max-withdrawal",
+    "name": "最大提款（大型银行金库奖杯）",
+    "name_en": "",
+    "category": "achievements",
+    "prerequisites": [
+      "大型银行金库平时不开，只有跟踪运钞车才能抢金库"
+    ],
+    "steps": [
+      "全图大型银行金库共8处",
+      "成功抢劫5处大型银行金库解锁该奖杯"
+    ],
+    "cautions": [
+      "金库抢劫难度远超普通银行差事",
+      "中文名为游民译文，官方中文名待核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249025.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-100-percent",
+    "name": "100%完成度清单（要点）",
+    "name_en": "100% Completion Checklist",
+    "category": "achievements",
+    "prerequisites": [
+      "清单随游戏内容确认中"
+    ],
+    "steps": [
+      "已知计入项：累计找到100个AI爽窥扫描点（5类）",
+      "已知计入项：22处银行差事全部完成",
+      "已知计入项：赢得30场竞速",
+      "全部23处雕塑扫描推进100%完成度"
+    ],
+    "cautions": [
+      "本条仅汇总已确认的计入项，完整清单待游民/官方补全后再更新",
+      "知识库当前未收录全成就列表，成就总数未核对"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249038.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-guide",
+    "name": "白金奖杯指南（难度/时长/可错过点）",
+    "name_en": "Trophy Guide",
+    "category": "achievements",
+    "prerequisites": [
+      "适用于主机首发版（PS5/Xbox）",
+      "搬运自 PowerPyx，小黑盒用户翻译校对"
+    ],
+    "steps": [
+      "奖杯难度：4/10（无难度奖杯、无金牌要求、无线上杯，只考验时间）",
+      "一周目时长 60-80 小时；白金总时长 150-200 小时",
+      "最难点：奖杯「漫漫长路」（完成 100% 收集度）",
+      "通关后获得 100% 收集清单；实际只需完成约 60% 游戏内容（绝大部分支线不用做完）",
+      "100% 需扫描 277 款基础车型里的 200 款（船只飞机也记得扫）",
+      "100% 需观察 255 种动物里的 100 种（不同品种猫狗分开算，只需观察不用剥皮）",
+      "可选任务总量 200-300+，远超所需；建议一刷出来就做",
+      "唯一疑似可错过：第一章杰森家冥想点——完成任务「如梦方醒」后早上在厨房与露西娅对话，跟随她到阳台完成冥想（教程点位，计入清单但不标注）"
+    ],
+    "cautions": [
+      "官方口径核对：全奖杯 55 个（1 白金+2 金+6 银+46 铜），55 条逐条条目已全部收录",
+      "道德度系统（犯罪档案）与奖杯无关，只影响 NPC 攻击力度；彻底变坏无法挽回名誉",
+      "露西娅和杰森好感度与奖杯无关",
+      "完成第一章会自动扣除你获得的所有钱，第一章内不用攒钱",
+      "建议每章开始/结束存档（本作无任务重玩机制）",
+      "全成就逐条清单知识库尚未收录（成就总数未核对），本条是策略向指南"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-vice-got-a-price",
+    "name": "罪恶明码标价！",
+    "name_en": "Vice Got a Price!",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Congratulations! You’re a Leonida Legend."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-just-like-paradise",
+    "name": "宛如天堂",
+    "name_en": "Just Like Paradise",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Gone Fishing.",
+      "Automatic story-related trophy, cannot be missed. Unlocks after the first main mission in Chapter 1 – Gone Fishing ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-paradise-lost",
+    "name": "失去的天堂",
+    "name_en": "Paradise Lost",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Chapter 1.",
+      "Automatic story-related trophy, cannot be missed. Unlocks after completing the first main mission in Chapter 2 – What’s in the Bag? ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-t-s-ass-drug-money",
+    "name": "T**s屁股的毒资",
+    "name_en": "T**s Ass Drug Money",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Chapter 2.",
+      "Automatic story-related trophy, cannot be missed. Unlocks after completing the first main mission in Chapter 3 – Welcome to Vice City ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-vice-city-baby",
+    "name": "罪恶都市，宝贝！",
+    "name_en": "Vice City, Baby!",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Chapter 3.",
+      "Automatic story-related trophy, cannot be missed. Unlocks after completing the first two main missions in Chapter 4 – Ocean Beach & Another Life ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-top-of-the-world-ma",
+    "name": "世界之巅，妈",
+    "name_en": "Top Of The World, Ma",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Chapter 4.",
+      "Automatic story-related trophy, cannot be missed. Unlocks after completing the final main mission in Chapter 4 – Starting From Zero ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-you-gotta-know-when-to-get-off",
+    "name": "你得知道何时收手",
+    "name_en": "You Gotta Know When to Get Off",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete the final mission.",
+      "Automatic story-related trophy, cannot be missed. Unlocks after completing the final main mission in Chapter 4 – Starting From Zero ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-trust",
+    "name": "信任",
+    "name_en": "Trust",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Breakfast Run.",
+      "Automatic story-related trophy, cannot be missed. Unlocks during Story Chapter 2 – Main Mission: Breakfast Run ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-break-the-bank",
+    "name": "搬空银行",
+    "name_en": "Break the Bank",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete The Cartel Heist.",
+      "Automatic story-related trophy, cannot be missed. Unlocks during Story Chapter 3 – Main Mission: The Cartel Heist ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-family-matters",
+    "name": "家事",
+    "name_en": "Family Matters",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Child’s Play.",
+      "Automatic story-related trophy, cannot be missed. Unlocks during Story Chapter 4 – Main Mission: Child’s Play ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-dwnfall",
+    "name": "DWNFALL",
+    "name_en": "DWNFALL",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Headliners.",
+      "Automatic story-related trophy, cannot be missed. Unlocks during Story Chapter 4 – Main Mission: Headliners ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-hi-jacked",
+    "name": "被劫持",
+    "name_en": "Hi-Jacked",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete VCIA Takedown.",
+      "Automatic story-related trophy, cannot be missed. Unlocks during Story Chapter 4 – Main Mission: VCIA Takedown ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-snow-storm",
+    "name": "暴风雪",
+    "name_en": "Snow Storm",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete Operation Savage Glory.",
+      "Automatic story-related trophy, cannot be missed. Unlocks during Story Chapter 5 – Main Mission: Operation Savage Glory ."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-a-long-road",
+    "name": "漫漫长路",
+    "name_en": "A Long Road",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Attain 100% Completion.",
+      "The 100% checklist is unlocked after the story under Progress > Stats > 100% Completion. Progress made during the story already counts. Nothing toward 100% is missable, everything is doable after the story in free-roam. The requirements are very forgiving, it’s not a true 100% completion. The majority of collectible types and side quests aren’t required at all. Of the collectibles and activities that are required you typically only need 70-80%. Overall the 100% completion checklist is closer to 60% true completion. Time-Savers: Complete all Optional Missions as they appear. You need to complete any 100 Optional Missions for the 100% Completion Checklist (there are more than needed). Optional Missions include the purple icons and the black icons with pink letters (whereas main missions are pink icons with black letters). Each of the vehicle deliveries of Moses and Randy counts too. Each Meditation Spot counts as +2 if you do it with both Jason and Lucia. There are a few missable optional missions during the story, but it doesn’t matter because there are much more than 100 optional missions total (easily 200-300+). You will automatically get 100+ optional tasks while working on all other trophies. It’s still good doing everything at the earliest opportunity as the optional questlines often introduce you to new game features. Scan any new vehicles you come across using the Waink app by holding and then (automatic unlock in Chapter 1). For 100% Completion you need to scan any 200 of the 277 base model vehicles. If you start it early you will get it done naturally throughout the story. Also scan boats and aircraft. Study any new animals you come across using the binoculars. Hold to select binoculars from weapon wheel, zoom in with and hold to study. For 100% Completion you need to study any 100 of 255 animals. Every breed of dog and cat counts separately too. Unlike Red Dead Redemption 2 you don’t need to hunt and skin the animals, just studying any 100 of them is enough. » GTA 6 – 100% Completion Checklist & Guide"
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-cunning-stunts",
+    "name": "巧妙特技",
+    "name_en": "Cunning Stunts",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete 250 Stunts."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-master-of-none",
+    "name": "样样通，样样松",
+    "name_en": "Master of None",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Try each type of activity once."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-the-shootist",
+    "name": "神枪手",
+    "name_en": "The Shootist",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Earn a gold medal in all Shooting Range challenges."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-top-fun",
+    "name": "顶级乐趣",
+    "name_en": "Top Fun",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Win a Top Fun Drone Race at every location."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-earn-cash-not-kudos",
+    "name": "赚真金，不赚虚名",
+    "name_en": "Earn Cash, Not Kudos",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Win 20 different races."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-baited-my-tackle",
+    "name": "我上了钩",
+    "name_en": "Baited My Tackle",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Beat Cal in a fishing challenge."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-stick-fiddler",
+    "name": "拨弄棍子的人",
+    "name_en": "Stick Fiddler",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete an arcade game."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-road-to-rehabilitation",
+    "name": "康复之路",
+    "name_en": "Road to Rehabilitation",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete the final mission for Andy."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-this-was-no-boat-accident",
+    "name": "这绝非意外沉船",
+    "name_en": "This Was No Boat Accident",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete the final mission for Kenton."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-the-lone-rider",
+    "name": "独行侠",
+    "name_en": "The Lone Rider",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete the final mission for Billy."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-strangers-freaks",
+    "name": "陌生人怪胎",
+    "name_en": "Strangers & Freaks",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete 8 mission strands for strangers across the state of Leonida."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-supply-demand",
+    "name": "供需关系",
+    "name_en": "Supply & Demand",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete the final mission for Randy."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-spin-on-this",
+    "name": "转起来！",
+    "name_en": "Spin On This!",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete the final mission for Tyrone."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-positive-mental-attitude",
+    "name": "积极心态",
+    "name_en": "Positive Mental Attitude",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Meditate at every spot across Leonida."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-fair-game",
+    "name": "公平交易",
+    "name_en": "Fair Game",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Hunt a unique animal for Bret."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-don-t-touch-my-deck",
+    "name": "别碰我的牌组",
+    "name_en": "Don’t Touch My Deck",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete 3 Collectible Card sets."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-you-wainker",
+    "name": "你个WINKer！",
+    "name_en": "You WAiNKer!",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "WAiNK It at 100 locations."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-one-last-thing",
+    "name": "最后一件事",
+    "name_en": "One Last Thing",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Complete 50 Challenges."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-hot-together",
+    "name": "火热搭档",
+    "name_en": "Hot Together",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Lose a 4 star Wanted Level with your partner and escape the heat."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-retail-therapy",
+    "name": "购物疗法",
+    "name_en": "Retail Therapy",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Rob 3 shops back-to-back with your partner without losing your Wanted Level."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-whip-it-good",
+    "name": "狠狠抽它",
+    "name_en": "Whip It Good",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Discover 100 vehicles."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-gunslinger",
+    "name": "神枪手",
+    "name_en": "Gunslinger",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Take down 5 enemies in a single use of Combat Focus."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-catch-me-if-you-can",
+    "name": "有本事就来抓我",
+    "name_en": "Catch Me If You Can",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Make an unscheduled departure at VCIA."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-challenging-tank",
+    "name": "挑战坦克",
+    "name_en": "Challenging Tank",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Kinda hot in these Rhinos."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-sneakthief",
+    "name": "偷窃者",
+    "name_en": "Sneakthief",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Rob a jewelry store without being detected."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-maximum-withdrawal",
+    "name": "最高提款额",
+    "name_en": "Maximum Withdrawal",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Rob 5 Bank Vaults and escape."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-a-classic-blitz-play",
+    "name": "经典闪电战术",
+    "name_en": "A Classic Blitz Play",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Rob an Armored Truck and escape."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-the-goodtime-state",
+    "name": "欢乐时光",
+    "name_en": "The Goodtime State",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Explore all of Leonida."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-pest-control",
+    "name": "害虫防治",
+    "name_en": "Pest Control",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Rob an Illegal Operation belonging to each gang."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-in-the-beginning",
+    "name": "最初……",
+    "name_en": "In The Beginning…",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Enjoy a cocktail with a view on Ocean Beach."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-capital-offense",
+    "name": "资本犯罪",
+    "name_en": "Capital Offense",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Smash your way out of a vehicle showroom in classic style."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-let-s-go-bowling",
+    "name": "去打保龄球吧",
+    "name_en": "Let’s Go Bowling",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Follow-through at the Kolt & Associates’ bowling alley."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-personal-best",
+    "name": "个人最佳",
+    "name_en": "Personal Best",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "A partnership with mass appeal."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-actions-speak-louder",
+    "name": "行动胜于雄辩",
+    "name_en": "Actions Speak Louder",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Choices made (for better or worse)."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-bad-luck-i-guess",
+    "name": "运气不好吧",
+    "name_en": "Bad Luck, I Guess",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Second time’s the charm."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-the-truth-is-out-there",
+    "name": "真相就在那里",
+    "name_en": "The Truth Is Out There",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "What the hell just happened?"
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-ten-pin",
+    "name": "十瓶保龄球",
+    "name_en": "Ten Pin",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Bowl ’em over with a melee drive-by."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-dime-on-the-dollar",
+    "name": "一分顶一元",
+    "name_en": "Dime on the Dollar",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Earn $250,000 laundering Marked Bills through your contacts."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-treat-yo-self",
+    "name": "犒劳一下自己",
+    "name_en": "Treat Yo Self",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Spend $100,000 across all shops."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-little-boxes",
+    "name": "小盒子",
+    "name_en": "Little Boxes",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Purchase all garage properties.",
+      "There are 8 purchasable garages and 4 story-related garages. For this trophy you only need the 8 purchasable garages. They cost a total of $160,000. Garages become available for purchase after Chapter 2 – Main Mission: Daily Driver (Steal the Crawler for Moses) . You will receive a notification that a new app has been installed on your phone, called Vice City Real Estate. You simply buy the garages through the phone app. A quick way to make money is to do robberies, especially later in Chapters 3-4 when you unlock higher-value robberies. » GTA 6 All 12 Garage Locations"
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "achievement-trophy-on-the-spot",
+    "name": "当场",
+    "name_en": "On the Spot",
+    "category": "achievements",
+    "prerequisites": [],
+    "steps": [
+      "Register 10 vehicles to the Scooter Bros app."
+    ],
+    "cautions": [
+      "使用作弊码的会话内无法解锁奖杯",
+      "条目内容为 PowerPyx 英文攻略翻译，官方中文译名以游戏内为准"
+    ],
+    "source_url": "https://www.powerpyx.com/gta-6-grand-theft-auto-vi-trophy-guide-roadmap/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  }
+]

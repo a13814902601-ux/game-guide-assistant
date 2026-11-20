@@ -69,13 +69,20 @@
   "steam_appid": 123456,
   "wikily_slug": "your-game",
   "ali213_zone": "https://gl.ali213.net/z/xxxxx",
+  "gamersky_tab": "https://www.gamersky.com/z/<slug>/<tab_id>/",
+  "gamersky_roadbook": "https://www.gamersky.com/tools/guide-map/roadbooks/<id>",
+  "powerpyx_hub": "https://www.powerpyx.com/<slug>/",
   "sources": [
     {"id": "steam", "pipeline": true},
     {"id": "wikily", "pipeline": true},
-    {"id": "ali213", "pipeline": true}
+    {"id": "ali213", "pipeline": true},
+    {"id": "gamersky", "pipeline": true},
+    {"id": "powerpyx", "pipeline": true}
   ]
 }
 ```
+
+配置键缺哪个就自动跳过哪个源；主机首发期 `steam_appid` 写 `null` 即可。
 
 跑：
 
@@ -90,6 +97,8 @@ output/your-game/
   guides/steam/*.md
   guides/wikily/*.md
   guides/ali213/*.md
+  guides/gamersky/*.md      # 游民星空（标题预筛后的真攻略）
+  guides/powerpyx/*.md      # PowerPyx 英文攻略（任务/收集/奖杯）
   _index.json        # 源状态、数量、抓取时间
   README.md
 ```
@@ -210,7 +219,7 @@ output/your-game/
 | 内容 | 公开仓库 | 本地完整版 |
 |---|---|---|
 | 五阶段流程/结构化规范/通用坑表 | ✅ | ✅ |
-| Steam / Wikily / 游民自动采集器 | ✅ | ✅ |
+| Steam / Wikily / 游民星空 / 游侠 / PowerPyx 自动采集器 | ✅ | ✅ |
 | B站登录态采集器 | ❌ | ✅（仅本地） |
 | 小黑盒签名中继/风控处理 | ❌ | ✅（仅本地） |
 | 696 篇第三方攻略全文 | ❌ | ✅（本地） |
@@ -248,6 +257,9 @@ def discover(fetcher: Fetcher, entry_url: str):
 | 结构化数量对不上 | 回汇总页核对；`_index.json` 是否只统计了部分源 |
 | MCP 冒烟失败 | `PYTHONUTF8=1`；`tools` 是否注册；数据目录是否正确 |
 | 问答时列表少 | 数据缺口；回到阶段 3 补全并核对总数 |
+| 白话整句搜不到 | 查询层有滑窗兜底，确认 `kb/query.py` 已更新；传短关键词永远更快 |
+| 某站点连不上 | 3DM 这类站会直接封锁脚本（SSL 断连），别换 UA 重试，换源或走浏览器 |
+| B站字幕全拿不到 | 会话级配额限流（player/v2 冷却约 2 分钟）；耗尽后换天自然观看刷新，别硬试 |
 
 ## 6. 验证这套 Skill 是否生效
 

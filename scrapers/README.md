@@ -4,7 +4,9 @@
 
 - `steam_guide.py`：Steam 社区指南（中文为主）
 - `wikily.py`：Wikily.gg 页面
-- `ali213.py`：游民星空攻略专区
+- `ali213.py`：游侠网攻略专区（注意与游民星空是不同站）
+- `gamersky.py`：游民星空攻略 tab 页 + 全任务 roadbook（GTA6 实测 58 篇）
+- `powerpyx.py`：PowerPyx 英文攻略站（任务通关/100%清单/奖杯指南，GTA6 实测 207 篇）
 - `base.py` / `htmlutil.py`：限速、缓存、robots、HTML→Markdown 基座
 
 **不包含** B站登录态采集器、小黑盒签名中继采集器。请只采集公开可访问的页面，

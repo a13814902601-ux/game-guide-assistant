@@ -13,7 +13,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT))
 
-from scrapers import ali213, steam_guide, wikily
+from scrapers import ali213, gamersky, powerpyx, steam_guide, wikily
 from scrapers.base import Fetcher
 
 TODAY = dt.date.today().isoformat()
@@ -104,6 +104,54 @@ def main() -> int:
             kept.append({"id": a["id"], "title": a["title"], "url": a["url"], "file": f"guides/ali213/{fname}"})
         return {"count": len(kept), "items": kept}
 
+    def build_gamersky(game_cfg: dict, out_dir: Path, fetcher: Fetcher, force: bool) -> dict:
+        guides_dir = out_dir / "guides" / "gamersky"
+        guides_dir.mkdir(parents=True, exist_ok=True)
+        articles = gamersky.discover_articles(fetcher, game_cfg["gamersky_tab"])
+        # 标题预筛：跳过预告解析/新闻，只收真攻略
+        guides = [a for a in articles if gamersky.is_guide_title(a["title"])]
+        skipped = len(articles) - len(guides)
+        fetcher._note(
+            f"游民星空：发现 {len(articles)} 篇，预筛后 {len(guides)} 篇（跳过 {skipped} 篇新闻/预告），开始抓正文")
+        kept = []
+        for art in guides:
+            a = gamersky.fetch_article(fetcher, art["path"])
+            if not a:
+                fetcher._note(f"跳过 {art['path']}（无正文）")
+                continue
+            fname = f"{a['id']}-{slugify(a['title'], a['id'])}.md"
+            (guides_dir / fname).write_text(gamersky.article_to_markdown(a), encoding="utf-8")
+            kept.append({"id": a["id"], "title": a["title"], "url": a["url"], "file": f"guides/gamersky/{fname}"})
+        # 全任务流程 roadbook（静态页仅含已渲染章节，任务清单记进索引）
+        if game_cfg.get("gamersky_roadbook"):
+            rb = gamersky.fetch_roadbook(fetcher, game_cfg["gamersky_roadbook"])
+            if rb:
+                fname = "roadbook-全任务流程图文攻略.md"
+                note = (f"- 来源: {rb['url']}\n- 语言: 中文\n- 覆盖: 静态页已渲染的任务"
+                        f"（{len(rb['tasks'])} 个；roadbook 分章 JS 动态加载，后续章节待浏览器补采）\n")
+                (guides_dir / fname).write_text(
+                    f"# {rb['title']}\n\n{note}\n{rb['body']}\n", encoding="utf-8")
+                kept.append({"id": "roadbook", "title": rb["title"], "url": rb["url"],
+                             "file": f"guides/gamersky/{fname}", "tasks": rb["tasks"]})
+                fetcher._note(f"游民星空 roadbook：{len(rb['tasks'])} 个任务卡片入库")
+        return {"count": len(kept), "items": kept}
+
+    def build_powerpyx(game_cfg: dict, out_dir: Path, fetcher: Fetcher, force: bool) -> dict:
+        guides_dir = out_dir / "guides" / "powerpyx"
+        guides_dir.mkdir(parents=True, exist_ok=True)
+        articles = powerpyx.discover_articles(fetcher, game_cfg["powerpyx_hub"])
+        fetcher._note(f"PowerPyx：发现 {len(articles)} 篇攻略，开始抓正文")
+        kept = []
+        for art in articles:
+            a = powerpyx.fetch_article(fetcher, art["path"])
+            if not a:
+                fetcher._note(f"跳过 {art['path']}（无正文）")
+                continue
+            fname = f"{slugify(a['title'], a['id'])}.md"
+            (guides_dir / fname).write_text(powerpyx.article_to_markdown(a), encoding="utf-8")
+            kept.append({"id": a["id"], "title": a["title"], "url": a["url"], "file": f"guides/powerpyx/{fname}"})
+        return {"count": len(kept), "items": kept}
+
     # 按配置启用各源；缺配置键的源跳过（新游戏不用一次接齐所有源）
     results = {}
     if cfg.get("steam_appid"):
@@ -112,6 +160,10 @@ def main() -> int:
         results["wikily"] = build_wikily(cfg, out_dir, fetcher, args.force)
     if cfg.get("ali213_zone"):
         results["ali213"] = build_ali213(cfg, out_dir, fetcher, args.force)
+    if cfg.get("gamersky_tab"):
+        results["gamersky"] = build_gamersky(cfg, out_dir, fetcher, args.force)
+    if cfg.get("powerpyx_hub"):
+        results["powerpyx"] = build_powerpyx(cfg, out_dir, fetcher, args.force)
 
     # 手动采集源（B站/小黑盒等，浏览器辅助），只统计已有产物，不参与自动管线。
     # guides/ 下除自动管线源外的目录都算手动源；旧 _index.json 同 file 条目原样保留（保住 url/作者等富字段）
@@ -126,7 +178,7 @@ def main() -> int:
                         old_by_file[it["file"]] = it
         except (json.JSONDecodeError, OSError):
             pass
-    auto_ids = {"steam", "wikily", "ali213"}
+    auto_ids = {"steam", "wikily", "ali213", "gamersky", "powerpyx"}
     manual: dict[str, list[dict]] = {}
     for d in sorted((out_dir / "guides").glob("*")):
         if not d.is_dir() or d.name in auto_ids:
@@ -205,12 +257,10 @@ def main() -> int:
     (out_dir / "_index.json").write_text(
         json.dumps(index, ensure_ascii=False, indent=2), encoding="utf-8"
     )
-    print(
-        f"完成：steam {results['steam']['count']} 篇，wikily {results['wikily']['count']} 篇，"
-        f"ali213 {results['ali213']['count']} 篇，手动源 "
-        + "、".join(f"{mid} {len(items)} 篇" for mid, items in manual.items())
-        + f" → {out_dir}"
-    )
+    # 汇总只打印实际跑了的源（不同游戏接入的源不一样）
+    parts = [f"{sid} {res['count']} 篇" for sid, res in results.items()]
+    parts += [f"{mid} {len(items)} 篇" for mid, items in manual.items()]
+    print("完成：" + ("、".join(parts) if parts else "无采集源") + f" → {out_dir}")
     return 0
 
 

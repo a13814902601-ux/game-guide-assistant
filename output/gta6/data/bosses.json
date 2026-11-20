@@ -1,0 +1,91 @@
+[
+  {
+    "id": "boss-wanted-level",
+    "name": "通缉等级系统（提升原因与降低方法）",
+    "name_en": "Wanted Level",
+    "category": "bosses",
+    "prerequisites": [
+      "通缉等级因犯罪行为提升"
+    ],
+    "steps": [
+      "犯罪行为（抢劫、伤人、袭警等）提升通缉星数",
+      "摆脱警方追捕可降低通缉：更换外观（换装）、脱离热区等方式",
+      "通缉星数增加后警方反应升级（更多警力/更高强度追捕）",
+      "通缉状态可在HUD查看",
+      "本作通缉机制与前作有差异，具体对比见游民原文"
+    ],
+    "cautions": [
+      "抢劫时预置换装衣物（后备箱多套衣物）是全游民攻略的通用前置",
+      "车内长按俯身键可躲避搜捕，步行时也可借停放载具使用此法"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249188.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "boss-criminal-profile",
+    "name": "犯罪侧写系统（罪恶值五档）",
+    "name_en": "Criminal Profile",
+    "category": "bosses",
+    "prerequisites": [
+      "系统记录杰森和露西娅的行为"
+    ],
+    "steps": [
+      "查看路径：【杰森与露西娅】菜单中追踪，或HUD快速查看",
+      "侧写状态五档：专业、冷酷、暴力、疯狂、不可救药",
+      "避免暴力、干净利落完成目标 → 侧写趋向【专业】",
+      "使用极端暴力 → 侧写趋向【暴力】或【疯狂】",
+      "侧写随时间及角色行为变化，可能产生长远影响"
+    ],
+    "cautions": [
+      "侧写对杰森和露西娅今后的发展有所影响（具体影响待游戏内容更新后补全）"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2249227.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "boss-police-pursuit-escape",
+    "name": "警方追捕摆脱技巧",
+    "name_en": "Police Pursuit Escape",
+    "category": "bosses",
+    "prerequisites": [
+      "被通缉状态"
+    ],
+    "steps": [
+      "载具中长按○键可俯身躲避搜捕；步行时可找停放的载具使用同样方法",
+      "利用多层停车场甩掉直升机（如国际机场全福银行攻略中的机场多层停车场）",
+      "更换外观/换装摆脱身份识别",
+      "驾驶行为注意：车头预摆对准撤离街道，减少出逃时间"
+    ],
+    "cautions": [
+      "拖太久执法人员会标记载具，影响后续跑路（拉卡斯卡拉汽车旅馆攻略实测）"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248568.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "boss-heat-escape-guide",
+    "name": "通缉逃脱实战流程（Heat 搜索机制）",
+    "name_en": "Heat Escape Guide",
+    "category": "bosses",
+    "prerequisites": [
+      "最高六级通缉",
+      "Heat 按「服装/车辆」等线索搜，不一定锁死坐标"
+    ],
+    "steps": [
+      "跑路流程：钱先存 → 换装 → 换车 → 喷漆 → 躲藏身处/巷子",
+      "背长枪逛街易被举报；星级越高越要断线索，别硬刚",
+      "双人载具：副驾可用长枪打轮胎，主驾只能短枪",
+      "黄区（警方接管区）打完过几天会再刷新"
+    ],
+    "cautions": [
+      "本作 Heat 机制按外观线索搜索，换装换车比躲坐标更有效",
+      "与通缉等级系统条目互补：那条讲机制，这条讲实战流程"
+    ],
+    "source_url": "https://www.xiaoheihe.cn/app/bbs/link/197281462",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  }
+]

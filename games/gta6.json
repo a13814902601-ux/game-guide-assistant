@@ -1,0 +1,58 @@
+{
+  "game": "gta6",
+  "name_zh": "侠盗猎车手6",
+  "name_en": "Grand Theft Auto VI",
+  "steam_appid": null,
+  "wikily_slug": "gta-6",
+  "gamersky_tab": "https://www.gamersky.com/z/gta6/390549_33233/",
+  "gamersky_roadbook": "https://www.gamersky.com/tools/guide-map/roadbooks/55",
+  "powerpyx_hub": "https://www.powerpyx.com/gta-6/",
+  "release_note": "2026-11-19 主机版发售（PS5/XSX|S），PC 版官方未公布日期；开荒期库，随社区内容增量补采",
+  "sources": [
+    {
+      "id": "wikily",
+      "pipeline": true,
+      "note": "Wikily.gg 英文 wiki（发售次日建站，24 顶层+5 二级页起步，随社区更新增长）"
+    },
+    {
+      "id": "gamersky",
+      "pipeline": true,
+      "note": "游民星空 GTA6 攻略 tab（72 篇起步，标题预筛跳新闻/预告）；scrapers/gamersky.py"
+    },
+    {
+      "id": "ali213",
+      "pipeline": false,
+      "status": "skipped",
+      "note": "2026-11-20 实测：游侠网 GTA6 专题页内容停在 2024 预告期，无正式攻略"
+    },
+    {
+      "id": "steam",
+      "pipeline": false,
+      "status": "skipped",
+      "note": "2026-11-20 实测：首发仅 PS5/XSX|S，无 PC 版无 Steam 页；PC 版（传闻 2027Q1）发售后启用"
+    },
+    {
+      "id": "biligame",
+      "pipeline": false,
+      "status": "skipped",
+      "note": "2026-11-20 实测：biligame 首页游戏列表未收录"
+    },
+    {
+      "id": "powerpyx",
+      "pipeline": true,
+      "note": "PowerPyx 英文攻略站（全任务通关+100%清单+全收集位置约 209 篇，robots 全站 Allow；正文 .entry-content）"
+    },
+    {
+      "id": "bilibili",
+      "pipeline": false,
+      "status": "manual",
+      "note": "B站专栏正文+视频AI字幕，浏览器登录态采集（见 game-kb-builder 技能 B站手册），产物放 guides/bilibili/"
+    },
+    {
+      "id": "xiaoheihe",
+      "pipeline": false,
+      "status": "pending",
+      "note": "待浏览器实测社区话题页是否已建 GTA6 站（热度极高，可能已开放）；采集纪律见 game-kb-builder 技能小黑盒手册"
+    }
+  ]
+}

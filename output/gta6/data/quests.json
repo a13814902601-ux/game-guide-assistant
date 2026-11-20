@@ -1,0 +1,382 @@
+[
+  {
+    "id": "quest-main-chapter1-overview",
+    "name": "主线流程总览·序章与第一章（16个任务顺序）",
+    "name_en": "Story Chapters and Length",
+    "category": "quests",
+    "prerequisites": [
+      "游戏主线共5章（序幕之后）",
+      "主线纯通关约40-60小时，全内容约70-120小时，含多个结局"
+    ],
+    "steps": [
+      "序幕：从监狱开始（可选与室友对话，长按L2互动）",
+      "垂钓（和卡尔开船）：毒品运送任务，目标帮唐尼从货里抽砖",
+      "杰森的家：回到主角安全屋",
+      "整装待发（再买把枪）：Chuck枪店购买第一把枪（安德鲁来电）",
+      "小剐蹭而已（修理汽车）：到岛南面改装店修车喷漆",
+      "作坊费用（布莱恩收租）：替布莱恩收租",
+      "管道活（收曼迪房租）：收曼迪的房租",
+      "避人耳目（和卡尔偷车）：与卡尔一起偷车",
+      "支线-女邻居雪莉：杰森安全屋出现新邻居，接雪莉的委托",
+      "抢劫-奇珍动物门面：接雪莉任务『拿到雪莉的朗姆酒』后触发",
+      "嘿阿诺德（追击阿诺德）：追查布莱恩失踪的联系人",
+      "抢劫-翠鸟帮渔棚：唐尼来电解锁",
+      "岛屿之梦（潜水寻宝）：替肯顿·里斯潜水找宝",
+      "风水（家里打游戏）",
+      "回家（露西娅出狱）：先去接露西娅出狱，最好不要拖延",
+      "支线-搜查潜水点"
+    ],
+    "cautions": [
+      "任务清单来自游民星空全任务流程图文攻略（roadbook），静态页覆盖序章至第一章，后续章节待补",
+      "接露西娅前修好车辆可获恋爱等级加成（一颗爱心）",
+      "『去接露西娅』任务有可选目标：给露西娅带些衣服，弄丢衣服可能要回滚进度",
+      "第一章结尾钱会被清空（新手开局别乱刷钱，先做该做的事）",
+      "第一章会错过的内容：载具『麦霸子·雪莉的半影使者』等支线"
+    ],
+    "source_url": "https://www.gamersky.com/tools/guide-map/roadbooks/55",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-seaside-bank-rockridge",
+    "name": "岩脊区海滨银行抢劫",
+    "name_en": "Seaside Bank (Rock Ridge) Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "游戏进度推进到中期（银行店铺出现）",
+      "后备箱多套衣物、头巾/眼镜/帽子、黏弹"
+    ],
+    "steps": [
+      "打开地图滑动到【抢劫】栏，选择【海滨银行（岩脊区）】追踪位置",
+      "将车直接停到银行左侧后门处，车头对准另一侧街道",
+      "从侧后门用开锁枪潜入银行",
+      "蹲下开启专注模式，走中间走廊左拐，先进左侧监控室干掉保安",
+      "监控桌抽屉拿到保险箱密码【9292】",
+      "穿越走廊到前方房间制伏人员，左侧用密码打开保险箱",
+      "走廊右侧房间打开两个抽屉拿走剩余的钱，从后门离开上车跑路"
+    ],
+    "cautions": [
+      "银行存储资源比珠宝典当多很多",
+      "干掉监控室保安后再开保险箱，避免触发警报"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248555.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-seaside-bank-downtown",
+    "name": "市中心海滨银行抢劫",
+    "name_en": "Seaside Bank (Downtown) Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "游戏进度推进到中期",
+      "后备箱多套衣物、头巾/眼镜/帽子、黏弹"
+    ],
+    "steps": [
+      "打开地图滑动到【抢劫】栏，选择【海滨银行（市中心）】追踪位置",
+      "打开地图跟随红色路线将车停到中间停车场",
+      "拿好装备走到银行正门前，正门左侧有个白色小门进入",
+      "（后续流程同海滨银行抢劫套路：控制监控室-拿密码-开保险箱）"
+    ],
+    "cautions": [
+      "市中心分店与岩脊区分店流程基本一致，注意停车点不同"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248552.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-avery-pawn",
+    "name": "艾弗里典当抢劫",
+    "name_en": "Avery Pawn Shop Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "珠宝典当的收货在第二章解锁",
+      "后备箱多套衣物、头巾/眼镜/帽子"
+    ],
+    "steps": [
+      "打开地图滑动到【抢劫】栏，选择【艾弗里典当】追踪位置",
+      "走到目标店铺位置，直接从后门进去",
+      "进门开专注模式往左侧高亮办公室走",
+      "红圈处照片墙可以看到保险箱密码",
+      "拿完财物原路撤离"
+    ],
+    "cautions": [
+      "珠宝典当类店铺是第二章解锁的稳定吸金点"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248569.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-whitesand-pawn",
+    "name": "白沙珠宝典当抢劫",
+    "name_en": "Whitesand Jewelry & Pawn Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "珠宝典当的收货在第二章解锁",
+      "后备箱多套衣物、头巾/眼镜/帽子"
+    ],
+    "steps": [
+      "打开地图滑动到【抢劫】栏，选择【白沙珠宝典当】追踪位置",
+      "将车停到店铺左侧标识1处（停车场）；求稳可撬开其他车辆堵住标识2的胡同口",
+      "从正门进入店铺，先开收银机",
+      "敲碎周围有高价值珠宝的货柜",
+      "快速进入后面房间搜刮"
+    ],
+    "cautions": [
+      "堵住胡同口可以延缓警方车辆进入，提高撤离成功率"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248576.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-kingfisher-fishcamp",
+    "name": "翠鸟帮渔棚完美抢劫",
+    "name_en": "Kingfisher Fish Camp Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "前期推进主线任务时，唐尼会主动打电话解锁该抢劫",
+      "与帮派【翠鸟帮】有关的抢劫任务之一"
+    ],
+    "steps": [
+      "接到唐尼电话解锁后前往渔棚岛屿",
+      "靠近岛屿后，建议从岛屿右侧登陆往区域中心突进",
+      "中间可见两个重要建筑：右侧小屋和前方大屋，逐个清理搜刮"
+    ],
+    "cautions": [
+      "抢劫帮派固定设施是前期非常重要的吸金手段",
+      "据点内可找到独特武器改款与强力载具"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248217.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-sunrise-rv-camp",
+    "name": "日出房车营地抢劫",
+    "name_en": "Sunrise RV Camp Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "主线推进至第二章时自动解锁"
+    ],
+    "steps": [
+      "打开地图【抢劫】栏，在【非法活动据点】找到该营地位置",
+      "从正门进来，按照攻略标点顺序探索（含高价值物品的房屋只有几个）",
+      "标点1处房屋门口有字母牌坊，别进错房",
+      "屋内保险箱可直接打开，保险箱右边小抽屉上有笔记，记录保险箱密码【6769】"
+    ],
+    "cautions": [
+      "先拿笔记再开保险箱，密码【6769】以笔记为准"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248221.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-lakaskala-motel",
+    "name": "拉卡斯卡拉汽车旅馆抢劫（寇特联帮据点）",
+    "name_en": "Lakaskala Motel Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "该旅馆是【寇特联帮】隐藏据点，位于盖尔霍恩港西边靠海的小破楼",
+      "靠近才会激活图标"
+    ],
+    "steps": [
+      "第一次来建议先把停车场显眼红色载具【公路霸者】抢走（可卖近6K或自用）",
+      "第二次再来正式抢钱",
+      "将车停在破楼最左侧道边",
+      "从最左侧的楼梯口上二楼，绕到破楼最右侧搜刮"
+    ],
+    "cautions": [
+      "拖太久等执法人员过来容易标记载具，后续不好跑",
+      "红色载具【公路霸者】能卖近6000或留作主力载具，很能打"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248225.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-bigshot-bowling",
+    "name": "大佬保龄球完美抢劫",
+    "name_en": "Bigshot Bowling Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "据点会直接显示在地图上，通过抢劫栏直接追踪"
+    ],
+    "steps": [
+      "到位置不要从正门进，绕到区域地图下方（正门右侧）",
+      "把车停在铁丝网附近，沿铁丝网找到一个狗洞",
+      "钻进去从左侧小门进入建筑",
+      "按攻略标注搜刮区域全部高价值物品"
+    ],
+    "cautions": [
+      "狗洞路线避开正门的正面视野"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248222.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-brooks-shipyard",
+    "name": "布鲁克斯船厂完美抢劫",
+    "name_en": "Brooks Shipyard Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "先来到盖尔霍恩港区域中间的【抢劫机会】触发前置剧情"
+    ],
+    "steps": [
+      "靠近盖尔霍恩港的【抢劫机会】触发剧情（正门已被执法人员包围，后面没有）",
+      "来到后院，在红圈处捡到武器改款【寇特联帮556突击步枪】",
+      "从后门进建筑搜刮",
+      "若执法人员已撤走，需击败后院敌人再闯进去"
+    ],
+    "cautions": [
+      "后院可捡独特武器改款【寇特联帮556突击步枪】，别漏"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248223.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-fullcoin-bank-airport",
+    "name": "国际机场全福银行抢劫",
+    "name_en": "Fullcoin Bank (Vice City Intl Airport) Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "后备箱多套衣物、头巾/眼镜/帽子、黏弹",
+      "注意：银行金库平时不开，只有跟踪运钞车才能抢金库，本条不含金库"
+    ],
+    "steps": [
+      "打开地图【抢劫】栏，选择【全福银行（罪恶城国际机场）】追踪",
+      "按红色路线导航到左下方机场停车场",
+      "这是一个多层停车场，直升机追踪不到且执法人员极容易跟丢",
+      "把自己的车放到这里，随意偷一辆可用的车开回银行门口实施抢劫"
+    ],
+    "cautions": [
+      "大型银行差事资源量远超普通银行，但难度更高",
+      "多层停车场是甩掉直升机和警察的关键埋伏点"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248568.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-exotic-animal-front",
+    "name": "奇珍动物门面抢劫（雪莉支线触发）",
+    "name_en": "Exotic Animal Front Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "推进主线到【嘿，阿诺德！】附近",
+      "杰森安全屋出现新邻居【雪莉】"
+    ],
+    "steps": [
+      "与雪莉对话接取任务【拿到雪莉的朗姆酒】",
+      "前往店铺【三巡酒行】",
+      "与店铺老板对话，杰森听到后屋有奇怪声音，触发该抢劫",
+      "建议从店铺右侧的垃圾桶跳到屋顶，往后院查看",
+      "完成抢劫后把朗姆酒带给雪莉"
+    ],
+    "cautions": [
+      "这是NPC提示触发的小场景抢劫，属于第一章易错过的支线"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248226.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-robbery-payday-loan-littlecuba",
+    "name": "岩脊区发薪日贷款店抢劫（小古巴）",
+    "name_en": "Payday Loan Store (Little Cuba) Robbery",
+    "category": "quests",
+    "prerequisites": [
+      "后备箱多套衣物、头巾/眼镜/帽子、黏弹"
+    ],
+    "steps": [
+      "打开地图【抢劫】栏，选择【发薪日贷款店（小古巴）】追踪位置",
+      "建议将车停到店铺左侧的胡同路口",
+      "进店控制现场后搜刮保险箱与抽屉",
+      "原路从胡同撤离"
+    ],
+    "cautions": [
+      "发薪日贷款店现金量大，撤离路线预先想好"
+    ],
+    "source_url": "https://www.gamersky.com/handbook/202611/2248548.shtml",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-newbie-opening-rules",
+    "name": "新手开荒总则：开局该做与不该做",
+    "name_en": "Beginner Opening Guide",
+    "category": "quests",
+    "prerequisites": [
+      "适用于主机首发版开荒期"
+    ],
+    "steps": [
+      "开局别乱玩：先推主线解锁功能（免费修车、销赃点、抢劫栏等）",
+      "推进主线到【海岸汽车护理】解锁乔伊改装店（免费修车/送车）",
+      "第一章结尾钱会被清空，别拼命刷钱，先把该做的支线和收集做了",
+      "拿到枪后练习专注模式（蹲下触发），潜入类抢劫收益高",
+      "剧情中首次到基伦托的枪店顺手买降落伞和防弹衣",
+      "开启辅助瞄准（如需要）：设置中打开自动瞄准辅助",
+      "减少眩晕：调整视角灵敏度/动态模糊等设置"
+    ],
+    "cautions": [
+      "第一章会错过的支线（如雪莉半影使者载具）要提前留意",
+      "本条为开荒期综合建议，随版本更新可能调整"
+    ],
+    "source_url": "https://www.gamersky.com/z/gta6/390549_33233/",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-20-early-tips",
+    "name": "20个前期游戏技巧（载具/专注/通勤/收益）",
+    "name_en": "20 Early Game Tips",
+    "category": "quests",
+    "prerequisites": [
+      "开荒期通用，无剧透"
+    ],
+    "steps": [
+      "借用路边载具前先用手机应用扫描门锁、报警系统与追踪模块，防范被巡逻定位",
+      "长途注意油耗；车辆/船只搁浅可用物理推车化解",
+      "双摇杆激活专注视野：白框=安全，红框=门禁警报；墙体透视可找保险箱密码便签",
+      "面对阻碍优先四肢压制，维持专业干净的行动记录（犯罪侧写）",
+      "善用定时轻轨网络省路费；探索荒野后直接切换留守安全屋的同伴，零成本跨区域回城",
+      "注册车可随时呼叫代送",
+      "低风险区域单人完成物资回收，高风险场所建议双人协同",
+      "后备箱可容纳多只收纳包；避开染色钞票防护陷阱，按物品分类送往专属销赃渠道",
+      "第一章末尾任务优先推进，尽早解锁双人配合、正规金融账户与无损开锁"
+    ],
+    "cautions": [
+      "染色钞票（染料包标记）要送专门渠道处理，乱用会被追踪"
+    ],
+    "source_url": "https://www.xiaoheihe.cn/app/bbs/link/197354606",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  },
+  {
+    "id": "quest-tenebrae-lux-guide",
+    "name": "内置解谜游戏《Tenebrae Lux》全流程攻略",
+    "name_en": "Tenebrae Lux Puzzle Guide",
+    "category": "quests",
+    "prerequisites": [
+      "主线第一章剧情中杰森会玩到该黑白小游戏",
+      "之后在杰森家客厅常驻可玩"
+    ],
+    "steps": [
+      "阶段一「棋盘碰碰乐」：通过碰撞消除棋盘所有棋子，至少完成 3 个棋盘（门口/房内都有；沙滩尽头还有额外棋盘但非必需）",
+      "阶段二「推理求救码」：山洞门开后进入，房间里互动找线索算出电话号码逃脱；注意右侧门向上是无限循环房间，线索在墙上日历等物品",
+      "后续阶段解法（完整 2 万字逐步攻略含每个棋盘的具体移动编号）见来源原文"
+    ],
+    "cautions": [
+      "棋盘解法格式：①编号棋子-移动方向（如 ①13-上）",
+      "这是游戏内 100% 完成度相关内容之一，详细解法对照原文图片食用"
+    ],
+    "source_url": "https://www.xiaoheihe.cn/app/bbs/link/197343735",
+    "verified_date": "2026-11-20",
+    "game_version": "主机首发版（2026-11-19）"
+  }
+]

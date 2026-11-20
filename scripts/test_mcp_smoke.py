@@ -57,14 +57,37 @@ async def main() -> int:
             data = json.loads(text_of(r))
             ok = len(data) >= 1
             checks.append(("search_guides:芬太片", ok, f"files={len(data)}"))
-            if data:
-                fp = data[0]["file"]
-                r = await client.call_tool("get_guide", {"game": GAME, "path": fp})
-                d2 = json.loads(text_of(r))
-                ok = "content" in d2 and len(d2["content"]) > 200
-                checks.append(("get_guide", ok, f"len={len(d2.get('content', ''))}"))
+            fp = data[0]["file"]
+            r = await client.call_tool("get_guide", {"game": GAME, "path": fp})
+            d2 = json.loads(text_of(r))
+            ok = "content" in d2 and len(d2["content"]) > 200
+            checks.append(("get_guide", ok, f"len={len(d2.get('content', ''))}"))
+
+        # 7 新游戏发现：GTA6 应在 list_games 中（开荒期库）
+        GTA = "gta6"
+        ok = any(g.get("game") == GTA and g.get("data_total", 0) > 0 for g in json.loads(
+            text_of(await client.call_tool("list_games", {}))))
+        checks.append(("list_games:gta6", ok, ""))
+
+        # 8 gta6 白话整句应能命中（滑窗兜底）
+        r = await client.call_tool("search_data", {"game": GTA, "keyword": "怎么抢银行"})
+        data = json.loads(text_of(r))
+        ok = len(data) >= 3 and any("银行" in d["name"] for d in data)
+        checks.append(("gta6:怎么抢银行", ok, f"hits={len(data)}, top={data[0]['name'][:20] if data else '无'}"))
+
+        # 9-10 gta6 全文用例（公开版没有攻略全文，自动跳过）
+        gta_guides = ROOT / "output" / GTA / "guides"
+        if gta_guides.is_dir() and any(gta_guides.rglob("*.md")):
+            r = await client.call_tool("search_guides", {"game": GTA, "keyword": "怎么抢银行"})
+            data = json.loads(text_of(r))
+            ok = len(data) >= 3 and any("银行" in d["title"] for d in data)
+            checks.append(("gta6:全文怎么抢银行", ok, f"files={len(data)}"))
+            r = await client.call_tool("search_guides", {"game": GTA, "keyword": "露西娅"})
+            data = json.loads(text_of(r))
+            ok = len(data) >= 2
+            checks.append(("gta6:露西娅→Lucia", ok, f"files={len(data)}"))
         else:
-            print("  - 跳过 search_guides/get_guide：公开版不含攻略全文")
+            print("  - 跳过 gta6 全文用例：公开版不含攻略全文")
 
     print("\n===== MCP 冒烟测试 =====")
     failed = 0
